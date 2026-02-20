@@ -1,0 +1,3096 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>SMYLEDENT</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">(function () {emailjs.init("ccQDYXAUPMQaoePAW");})(); </script>
+  
+    <script src="javascript/navbar.js"></script>
+    <script src="javascript/form-validation.js"></script>
+    <script src="javascript/scroll-reviews.js"></script>
+
+  </head>
+  <body>
+    
+    <!-- map and scroll to top button -->
+      <a id="myBtn3" target="_blank"
+        href="https://www.google.com/maps/place/Anca%26Raluca+Smyle/@44.3800519,26.1348675,15z/data=!4m2!3m1!1s0x0:0x4f125562497c7268?sa=X&ved=2ahUKEwj9uvztk5yBAxX8gf0HHQzfD-oQ_BJ6BAhEEAA&hl=ro-RO&gl=ro&ved=2ahUKEwj9uvztk5yBAxX8gf0HHQzfD-oQ_BJ6BAhSEAg">
+        <img class="maps-shake " src="photos/google-maps.png"></a>
+          <a id="myBtn"></a>
+
+         <!-- navigation -->
+    <div class="navigation site-header ">
+
+      <div class="secondNav">
+       
+      <a target="_blank"
+        href="https://www.google.com/search?hl=ro-RO&gl=ro&q=Anca%26Raluca+Smyle,+Strada+Sergent+Ion+Iriceanu+20-22,+Bucure%C8%99ti&ludocid=5697710359205147240&lsig=AB86z5UIguy6ZQNaOYx-0LA_bPb6#lrd=0x40b1fe0b7b02088d:0x4f125562497c7268,3">
+        <p style="color:white;">Lasa-ne un review cu un singur click!</p>
+      </a>
+
+    <div class="socialMediaLinks">
+      
+      <h5 style="color:white;">Viziteaza </h5>
+
+         <a target="_blank" href="https://www.facebook.com/p/Anca-Raluca-Smyle-100054650610498/"> <img src="photos/facebook.png"></a>
+         <a target="_blank" href="https://www.instagram.com/ancaralucasmyle/"> <img src="photos/instagram.png"></a>
+
+        </div>
+
+    <div class="phoneNumber">
+    
+        <h5 style="color:white;">Suna acum</h5>
+        <img style="width: 20px;height: 20px;" src="photos/telefon-info.png">
+        <h5 style="color:white;"><a href="tel:0799.399.599">0799.399.599</a></h5>
+    
+      </div>
+    </div>  
+
+      <button id="floatingButton" class="floatingButton" onclick="handleButtonClick()">Inapoi</button>
+      <nav class="nav-container w3-padding-xlarge">
+           
+    <div class="mobile-button">
+
+      <a href="index.html" class="logo"><img src="photos/logo.png" style="width: 100px;height: 100px;"></a>
+      <span style="float: right;" onclick="toggleMobileNavigation()">&#9776;</span>
+          
+    </div>
+          
+    <div class="links">
+            
+      <a id="procedure-card-button" class="price-slide4 navbar-button">Preturi</a>
+    
+    <div class="dropdown">
+      
+      <a id="procedure-card-button" class="price-slide3 navbar-button" data-target="more-info-1">Proceduri<img style="width: 20px;height: 20px;" src="photos/arrow-down.png"></a>
+                
+    <div class="dropdown-content hidden2">
+
+      <a id="procedure-card-button" class="price-slide3 navbar-button" data-target="more-info-1">Consultatie</a>
+      <a id="procedure-card-button" class="price-slide3 navbar-button" data-target="more-info-2">Chirurgie</a>
+      <a id="procedure-card-button" class="price-slide3 navbar-button" data-target="more-info-3">Odontologie</a>
+      <a id="procedure-card-button" class="price-slide3 navbar-button" data-target="more-info-4">Pedodontie</a>
+      <a id="procedure-card-button" class="price-slide3 navbar-button" data-target="more-info-5">Profilaxie</a>
+      <a id="procedure-card-button" class="price-slide3 navbar-button" data-target="more-info-6">Protetică</a>
+      <a id="procedure-card-button" class="price-slide3 navbar-button" data-target="more-info-7">Parodontologie</a>
+      <a id="procedure-card-button" class="price-slide3 navbar-button" data-target="more-info-8">Ortodontie</a>
+      <a id="procedure-card-button" class="price-slide3 navbar-button" data-target="more-info-9">Endodontie</a>
+                
+    </div>            
+   </div>
+             
+    <div class="logo">
+          
+      <a href="index.html"><img src="photos/logo2.png" style="margin-top:-10px;width: 60px;height: 60px;">ANCA&RALUCA</a>
+
+    </div>     
+           
+      <a href="index.html#target-element" class="navbar-button price-slide6" id="galerie-button">Galerie</a>
+      <a href="index.html#target-element" class="navbar-button price-slide6" id="contact-button">Contact</a>
+                
+    </div>
+        <!-- mobile nav -->
+    <div id="mobile-sidenav" class="mobile-links ">
+    
+    <div class="mobile-logo" style="display: inline;">
+              
+      <a href="index.html" class="logo"><img src="photos/logo.png" style="margin-top:-35px;width: 100px;height: 100px;"></a>
+      <span style="width: 100%;"></span>
+      <a href="javascript:void(0)" class="closebtn" onclick="toggleMobileNavigation()">&times;</a>
+    
+    </div>
+
+      <a  id="procedure-card-button" class="price-slide3 navbar-button" data-target="more-info-1">Proceduri</a>
+      <a id="procedure-card-button" class="price-slide4 navbar-button">Preturi</a>
+      <a href="index.html#target-element" class="navbar-button price-slide6" onclick="toggleMobileNavigation()"id="galerie-button1">Galerie</a>
+      <a href="index.html#target-element" class="navbar-button price-slide6" onclick="toggleMobileNavigation()" id="contact-button1">Contact</a>
+      <a href="index.html" class="navbar-button" onclick="toggleMobileNavigation()" >Acasa</a>
+            
+    </div>
+  </nav>
+</div>
+
+      <!-- carousel -->
+  <div class="carousel-container">
+
+    <!-- carousel page 1 -->
+    <div class="carousel-slide " id="slide-1">
+     <div class="carousel-item welcome" id="slide-1">     
+      <div class="container">
+    
+      <div class="qr-container"></div>
+      <!-- landing page -->
+        <div class="page">
+          <div class="purple-section">
+            <div class="googlemaps ">
+              <div class="icon-1">
+                <a target="_blank" href=""><p class="icon-1"></p></a>
+              </div>
+              <div class="icon-2 3"></div>
+
+    <div class="section-1">
+
+      <h2 class="">Un dentist pentru toata familia</h2>
+      <p class="">Atmosfera prietenoasa si profesionalismul echipei medicale vor face ca timpul petrecut la noi sa treaca in mod placut.</p>
+           
+    <div class="background3">
+      <img src="photos/logo.png">
+     
+    </div>
+    <div class="mobilePrice hidden3">
+      <!-- <a id="procedure-card-button" class="price-slide3 floatButton" data-target="">Proceduri</a> -->
+      <a id="procedure-card-button" class="price-slide4 floatButton ">Preturi</a>
+    </div>
+    <div class="mobileProceeds hidden3 ">
+      <a id="procedure-card-button" class="price-slide3 floatButton" data-target="">Proceduri</a>
+      <!-- <a id="procedure-card-button" class="price-slide4 floatButton ">Preturi</a> -->
+    </div>
+   </div>
+    
+    <div class="section-2">
+      <div class="elm-1">
+      <div id="map"></div>
+    </div>
+   </div>
+  </div>
+        <!-- divider  -->
+    <div class="custom-shape-divider-bottom-1694118945">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+              opacity=".25" class="shape-fill"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+              opacity=".5" class="shape-fill"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+              class="shape-fill"></path>
+     </svg>
+    </div>
+   </div>
+        
+    <div style="height: 100px;background-color: black;z-index: 10;" class="svg">
+      <div class="custom-shape-divider-bottom-1694218631">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <rect x="1200" height="3.6"></rect>
+            <rect height="3.6"></rect>
+              <path d="M0,0V3.6H580.08c11,0,19.92,5.09,19.92,13.2,0-8.14,8.88-13.2,19.92-13.2H1200V0Z" class="shape-fill">
+      </path>
+     </svg>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+
+    <!-- carousel slide 2 -->
+  <div class="carousel-item information " id="slide-2">
+    <div class="container2 "> 
+   
+      <!-- procedures -->
+    <div class="grid-container">
+    
+    <!-- consultatie -->
+    <div class="card-row2">
+      <div class="card 3">
+        <div class="face face1">
+          <div class="content">
+
+            <img src="photos/consultatie.png">
+            <h3>CONSULTAŢIE</h3>
+
+        </div>
+      </div>
+        <div class="face face2">
+          <div class="content ">
+            <div class="content-wrapper">
+              <div class="buttons-container ">
+                
+                <a href="#info-1" class="more-info-button  scroll-down bubble-button2" data-target="more-info-1">Afla mai multe</a>
+                <a href="#" class="price-slide4 bubble-button2" >Preturi</a>
+
+            </div>
+
+          <p class="truncate">
+            Consultația stomatologică reprezintă o întâlnire între pacient și medicul dentist, în cadrul căreia se efectuează 
+            o evaluare detaliată a stării generale a sănătății orale a pacientului. Aceasta este o etapă esențială în stabilirea unui diagnostic 
+            precis și în elaborarea unui plan de tratament adecvat pentru nevoile individuale ale pacientului.
+          </p>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <!-- chirurgie  -->
+    <div class="card 3">
+      <div class="face face1">
+        <div class="content">
+        
+          <img src="photos/chirurgie.png">
+        <h3>CHIRURGIE</h3>  
+      
+      </div>
+    </div>
+      <div class="face face2">
+        <div class="content-wrapper">
+          <div class="content">
+            <div class="buttons-container ">
+              
+              <a href="#info-2" class="more-info-button  scroll-down bubble-button2" data-target="more-info-2">Afla mai multe</a>
+              <a href="" class="price-slide4 bubble-button2" data-target="">Preturi</a>
+        
+            </div>
+       <p class="truncate">
+        Chirurgia dentară este o ramură a stomatologiei care se ocupă de diagnosticarea, tratamentul și intervențiile chirurgicale asupra afecțiunilor 
+        și problemelor dentare și maxilofaciale. Aceasta implică proceduri chirurgicale care vizează îndepărtarea dinților afectați, tratamentul bolilor 
+        parodontale, inserarea implanturilor dentare, corectarea anomaliilor dentare și faciale, precum și alte intervenții chirurgicale orale.
+       </p>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- odontologie -->
+    <div class="card 3">
+      <div class="face face1">
+        <div class="content">
+      
+          <img src="photos/ortodontie.png">
+          <h3>ODONTOLOGIE</h3>
+      
+        </div>
+    </div>
+      <div class="face face2">
+        <div class="content-wrapper">
+         <div class="content ">
+            <div class="buttons-container ">
+            
+              <a href="#" class="more-info-button  bubble-button2" data-target="more-info-3">Afla mai multe</a>
+              <a href="" class="price-slide4 bubble-button2" data-target="">Preturi</a>
+          
+            </div>
+
+       <p class="truncate">
+        Ca specialitate stomatologică, odontologia se ocupă de tratarea lezunilor carioase ale dinților, 
+        precum și a celor necarioase, care pot fi fracturi, distrofii sau leziuni de uzură dentară 
+      </p>
+      
+       </div>
+      </div>
+    </div>
+  </div>
+ 
+</div><!-- end of first row -->
+
+    <!-- pedodontie -->
+    <div class="card-row2">
+      <div class="card 3">
+        <div class="face face1">
+          <div class="content">
+
+            <img src="photos/pedodontie.png">
+            <h3>PEDODONŢIE</h3>
+
+          </div>
+        </div>
+        <div class="face face2">
+          <div class="content-wrapper">
+            <div class="content">
+              <div class="buttons-container ">
+              
+                <a href="#" class="more-info-button  bubble-button2" data-target="more-info-4">Afla mai multe</a>
+                <a href="" class="price-slide4 bubble-button2" data-target="">Preturi</a>
+            
+            </div>
+
+           <p class="truncate">
+          Pedodontia are in vedere profilaxia si tratamentul afectiunilor care sunt specifice dentitiei temporare si a dentitiei
+          premature pe care o detin copii si adolescentii. Problemele la nivelul cavitatii orale pot aparea din diferite motive
+          precum igiena orala deficitara, dar si din cauze genetice. In plus, dentitia temporara este mult mai sensibila si
+          predispusa spre aparitia cariilor si ulterior a durerilor.
+           </p>
+           
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- profilaxie -->
+      <div class="card 3">
+        <div class="face face1">
+          <div class="content">
+
+            <img src="photos/profilaxie-procedure.png">
+            <h3>PROFILAXIE</h3>
+        </div>
+      </div>
+        <div class="face face2">
+          <div class="content-wrapper">
+            <div class="content ">
+              <div class="buttons-container ">
+              
+                <a href="#" class="more-info-button  bubble-button2" data-target="more-info-5">Afla mai multe</a>
+                <a href="" class="price-slide4 bubble-button2" data-target="">Preturi</a>
+          
+              </div>
+
+            <p class="truncate">
+              Profilaxia dentară este cea mai simplă și accesibilă metodă de tratament. Profilaxia constă dintr-un set de proceduri
+            care au ca scop prevenirea apariției cariei dentare și a bolii parodontale. Mai mult, profilaxia previne și evoluția
+            acestor afecțiuni odată ce ele au apărut.
+          </p>
+       
+        </div>
+      </div>
+    </div>
+  </div>
+      
+    <!-- protetica -->
+      <div class="card 3">
+        <div class="face face1">
+          <div class="content">
+
+            <img src="photos/protetica.png">
+            <h3>PROTETICĂ</h3>
+            
+          </div>
+        </div>
+          <div class="face face2">
+            <div class="content ">
+              <div class="buttons-container ">
+
+                <a href="#" class="more-info-button  bubble-button2" data-target="more-info-6">Afla mai multe</a>
+                <a href="" class="price-slide4 bubble-button2" data-target="">Preturi</a>
+              
+              </div>
+
+            <p class="truncate">Protetica dentară este ramura cea mai complexă a stomatologiei. Ea analizează arcadele dentare afectate de pierderea
+            unuia sau a mai multor dinți (edentație) sau de tocirea acestora (atriție) și găsește cele mai potrivite soluții de
+            tratament în scopul refacerii echilibrului estetic, funcțional și musculo-articular.
+          </p>
+              
+        </div>
+      </div>
+    </div>
+      
+  </div> <!-- end of second row -->
+  
+    <!-- parodontologie -->
+      <div class="card-row2">
+        <div class="card 3">
+          <div class="face face1">
+            <div class="content">
+
+            <img src="photos/parodontologie.png">
+            <h3>PARODONTOLOGIE</h3>
+          
+          </div>
+        </div>
+        <div class="face face2">
+          <div class="content-wrapper">
+            <div class="content ">
+              <div class="buttons-container ">
+              
+                <a href="#" class="more-info-button  bubble-button2" data-target="more-info-7">Afla mai multe</a>
+                <a href="" class="price-slide4 bubble-button2" data-target="">Preturi</a>
+              </div>
+           
+             <p class="truncate">
+             Parodontologia este specialitatea stomatologică ce are ca scop studierea întregului sistem ce menține dinții în alveolele oaselor maxilare.
+             </p>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- ortodontie -->
+    <div class="card 3">
+      <div class="face face1">
+        <div class="content">
+
+          <img src="photos/ortodontie.png">
+          <h3>ORTODONŢIE</h3>
+            
+        </div>
+      </div>
+        <div class="face face2">
+          <div class="content-wrapper">
+            <div class="content ">
+              <div class="buttons-container ">
+              
+                <a href="#" class="more-info-button  bubble-button2" data-target="more-info-8">Afla mai multe</a>
+                <a href="" class="price-slide4 bubble-button2" data-target="">Preturi</a>
+              </div>
+            
+              <p class="truncate">
+                Ortodonția este o ramură a stomatologiei moderne care se ocupă cu prevenirea, diagnosticarea și tratamentul anumitor probleme dentare, cum ar fi dinții strâmbi sau nealiniați.
+              </p>
+           
+            </div>
+          </div>
+        </div>
+    </div>
+      
+    <!--endodontie  -->
+    <div class="card 3">
+      <div class="face face1">
+        <div class="content">
+
+          <img src="photos/endodontie.png">
+          <h3>ENDODONŢIE</h3>
+            
+        </div>
+      </div>
+          <div class="face face2">
+            <div class="content">
+              <div class="buttons-container ">
+
+                <a href="#" class="more-info-button  bubble-button2" data-target="more-info-9">Afla mai multe</a>
+                <a href="" class="price-slide4 bubble-button2" data-target="">Preturi</a>
+              
+              </div>
+            
+              <p class="truncate">
+                Edodonția se ocupă cu tratamentul afecțiunilor din interiorul dintelui, mai exact cu afecțiunile pulpei, cu prevenirea, diagnosticarea și tratamentul patologiei pulpare.
+              </p>
+             
+            </div>
+          </div>
+        </div>
+      
+      </div> <!-- end of third row -->
+    </div> <!-- end of procedures -->
+  </div>
+</div>
+    <!-- carousel slide 3 -->
+    <div class="carousel-item prices" id="slide-3">
+     
+      <div class="pricesMasterList">
+     
+    <div class="price2Proceeds  hidden3">
+
+        <a id="procedure-card-button" class="price-slide3 floatButton " data-target="">Proceduri</a>
+        <a class="floatButton appointment child" data-target="contact-form-1">Programează-te</a>
+
+      </div>
+ 
+        <div class="pricesSection">
+          <div class="dropdown2" style="border-right: 0px solid black;">
+    
+            <ul class="dropdown-content2 ">
+    
+            </ul>
+          </div>
+        </div>
+    <!-- preturi consultatie -->
+    <div class="pricesSection">
+      <div class="dropdown2">
+        <button class="dropdown-btn" id="consultatie">
+          <span>Consultatie Stomatologica</span>
+          <span class="arrow"></span>
+        </button>
+        <ul class="dropdown-content2">
+          <div class="preturi-align-row ">
+            <h2>Consultaţia si plan tratament</h2>
+            <h3>200<sup>RON</sup><span class="small"></span></h3>
+    
+          </div>
+          <div class="preturi-align-row ">
+            <h2>Consultaţie de specialitate</h2>
+            <h3>150<sup>RON</sup><span class="small"></span></h3>
+    
+          </div>
+        </ul>
+      </div>
+    </div>
+    <!-- preturi chirurgie -->
+      <div class="pricesSection">
+        <div class="dropdown2">
+          <button class="dropdown-btn">
+            <span>Chirurgie</span>
+            <span class="arrow"></span>
+          </button>
+          <ul class="dropdown-content2">
+            <div class="preturi-align-row ">
+              <h2>Anestezie atraumatica (injectabila) </h2>
+              <h3>200<sup>RON</sup><span class="small"></span></h3>
+      
+            </div>
+            <div class="preturi-align-row ">
+              <h2>Extracţie dinte parodontotic </h2>
+              <h3>150<sup>RON</sup><span class="small"></span></h3>
+      
+            </div>
+            <div class="preturi-align-row ">
+              <h2>Extracţie monoradiculari </h2>
+              <h3>200<sup>RON</sup><span class="small"></span></h3>
+      
+            </div>
+            <div class="preturi-align-row ">
+              <h2>Extracţie pluriradiculari </h2>
+              <h3>350<sup>RON</sup><span class="small"></span></h3>
+      
+            </div>
+            <div class="preturi-align-row ">
+              <h2>Extracţie rest radicular </h2>
+              <h3>350<sup>RON</sup><span class="small"></span></h3>
+            </div>
+            <div class="preturi-align-row ">
+              <h2>Extracţie molar de minte erupt </h2>
+              <h3>450<sup>RON</sup><span class="small"></span></h3>
+            </div>
+            <div class="preturi-align-row ">
+              <h2>Extracţie molar de minte inclus </h2>
+              <h3>500-900<sup>RON</sup><span class="small"></span></h3>
+      
+            </div>
+      
+      
+            <div class="preturi-align-row ">
+              <h2>Extracţie canin inclus </h2>
+              <h3>600-900<sup>RON</sup><span class="small"></span></h3>
+      
+            </div>
+            <div class="preturi-align-row ">
+              <h2>Extracţie complicata (traumatica) </h2>
+              <h3>350-500<sup>RON</sup><span class="small"></span></h3>
+      
+            </div>
+            <div class="preturi-align-row ">
+              <h2>Sutura postextracţionala </h2>
+              <h3>100<sup>RON</sup><span class="small"></span></h3>
+      
+            </div>
+            <div class="preturi-align-row ">
+              <h2>Tratament alveolita postextracţionala </h2>
+              <h3>100<sup>RON</sup><span class="small"></span></h3>
+            </div>
+            <div class="preturi-align-row ">
+              <h2>Tratamentul hemoragiei postextracţionale per sedinta </h2>
+              <h3>150<sup>RON</sup><span class="small"></span></h3>
+            </div>
+            <div class="preturi-align-row ">
+              <h2>Antibiotic local </h2>
+              <h3>100<sup>RON</sup><span class="small"></span></h3>
+            </div>
+            <div class="preturi-align-row ">
+              <h2>Decapuşonare </h2>
+              <h3>150<sup>RON</sup><span class="small"></span></h3>
+            </div>
+      
+      
+      
+            <div class="preturi-align-row ">
+              <h2>Incizie – abces gingival </h2>
+              <h3>200<sup>RON</sup><span class="small"></span></h3>
+      
+            </div>
+            <div class="preturi-align-row ">
+              <h2>Implant dentar </h2>
+              <h3>450-850<sup>EUR</sup><span class="small"></span></h3>
+      
+            </div>
+            <div class="preturi-align-row ">
+              <h2>Rezecţie apicala </h2>
+              <h3>500-900<sup>RON</sup><span class="small"></span></h3>
+      
+            </div>
+            <div class="preturi-align-row ">
+              <h2>Lifting sinusal(includ biomaterialele) </h2>
+              <h3>500-1000<sup>EUR</sup><span class="small"></span></h3>
+      
+            </div>
+            <div class="preturi-align-row ">
+              <h2>Gingivoplastie per dinte </h2>
+              <h3>100<sup>RON</sup><span class="small"></span></h3>
+            </div>
+            <div class="preturi-align-row ">
+              <h2>Gingivoalveoloplastie per dinte </h2>
+              <h3>400<sup>RON</sup><span class="small"></span></h3>
+            </div>
+            <div class="preturi-align-row ">
+              <h2>Adiţie de os(nu include pretul biomaterialelor) </h2>
+              <h3>250<sup>EUR</sup><span class="small"></span></h3>
+            </div>
+          </ul>
+        </div>
+      </div>
+        <!-- preturi odontologie -->
+        <div class="pricesSection">
+          <div class="dropdown2">
+            <button class="dropdown-btn">
+              <span>Odontologie</span>
+              <span class="arrow"></span>
+          </button>
+               
+          <ul class="dropdown-content2">
+        <div class="preturi-align-row ">
+          <h2>Coafaj indirect/direct</h2>
+            <h3>200<sup>RON</sup><span class="small"></span></h3>
+      </div>
+        <div class="preturi-align-row ">
+          <h2>Îndepartarea obturaţiei vechi </h2>
+            <h3>100<sup>RON</sup><span class="small"></span></h3>
+      </div>
+        <div class="preturi-align-row ">
+          <h2>Obturaţie fotopolimerizabila mare (3 suprafata)</h2>
+            <h3>400<sup>RON</sup><span class="small"></span></h3>
+      </div>
+        <div class="preturi-align-row ">
+          <h2>Obturaţie fotopolimerizabila medie (2 suprafata) </h2>
+            <h3>300<sup>RON</sup><span class="small"></span></h3>
+      </div>
+        <div class="preturi-align-row ">
+          <h2>Obturaţie fotopolimerizabila mica (1 suprafata) </h2>
+            <h3>200<sup>RON</sup><span class="small"></span></h3>
+      </div>
+    </ul>
+  </div>
+</div>
+          <!-- preturi pedodontie -->
+            <div class="pricesSection">
+              <div class="dropdown2">
+                <button class="dropdown-btn">
+                  <span>Pedodonție</span>
+                  <span class="arrow"></span>
+                </button>
+            
+            <ul class="dropdown-content2">
+          <div class="preturi-align-row ">
+            <h2>Coafaj indirect pe dinte temporar</h2>
+              <h3>100<sup>RON</sup><span class="small"></span></h3>
+      </div>
+          <div class="preturi-align-row">
+            <h2>Obturaţie canal dinte temporar</h2>
+              <h3>200<sup>RON</sup><span class="small"></span></h3>
+      </div>
+          <div class="preturi-align-row">
+            <h2>Obturaţie fotopolimerizabila pe dinte temporar</h2>
+              <h3>200<sup>RON</sup><span class="small"></span></h3>
+      </div>
+          <div class="preturi-align-row">
+            <h2>Obturaţie cu glassionomer pe dinte temporar</h2>
+              <h3>200<sup>RON</sup><span class="small"></span></h3>
+        </div>
+          <div class="preturi-align-row">
+            <h2>Sigilare pe dinte temporar</h2>
+              <h3>200<sup>RON</sup><span class="small"></span></h3>
+        </div>
+          <div class="preturi-align-row">
+            <h2>Drenaj per canal pe dinte temporar</h2>
+              <h3>200<sup>RON</sup><span class="small"></span></h3>
+        </div>
+          <div class="preturi-align-row">
+            <h2>Detartraj cu ultrasunete şi periaj professional pentru dinţi temporari</h2>
+              <h3>200<sup>RON</sup><span class="small"></span></h3>
+        </div>
+          <div class="preturi-align-row">
+            <h2>Periaj profesional pentru dinţi temporari</h2>
+              <h3>150<sup>RON</sup><span class="small"></span></h3>
+        </div>
+          <div class="preturi-align-row">
+            <h2>Fluorizare pentru dinţi temporari</h2>
+              <h3>200<sup>RON</sup><span class="small"></span></h3>
+        </div>
+          <div class="preturi-align-row">
+            <h2>Extracţie dinte temporar</h2>
+               <h3>200<sup>RON</sup><span class="small"></span></h3>
+        </div>
+      </ul>
+    </div>
+  </div>
+            <!-- preturi profilaxie -->
+              <div class="pricesSection">
+                <div class="dropdown2">
+                  <button class="dropdown-btn">
+                    <span>Profilaxie</span>
+                    <span class="arrow"></span>
+                  </button>
+                
+                <ul class="dropdown-content2">
+            <div class="preturi-align-row">
+              <h2>Detartraj cu ultrasunete</h2>
+                <h3>250<sup>RON</sup><span class="small"></span></h3>
+          </div>
+            <div class="preturi-align-row">
+              <h2>Air flow + Detartra + Periaj</h2>
+                <h3>350<sup>RON</sup><span class="small"></span></h3>
+          </div>
+            <div class="preturi-align-row">
+              <h2>Periaj profesional</h2>
+                <h3>150<sup>RON</sup><span class="small"></span></h3>
+          </div>
+            <div class="preturi-align-row">
+              <h2>Fluorizare</h2>
+                <h3>200<sup>RON</sup><span class="small"></span></h3>
+          </div>
+            <div class="preturi-align-row">
+              <h2>Aplicare desensibilizant per dinte</h2>
+                <h3>100<sup>RON</sup><span class="small"></span></h3>
+          </div>
+            <div class="preturi-align-row">
+              <h2>Albire cu lampa</h2>
+                <h3>900<sup>RON</sup><span class="small"></span></h3>
+          </div>
+              <div class="preturi-align-row">
+                <h2>Albire si detartraj</h2>
+                  <h3>1000<sup>RON</sup><span class="small"></span></h3>
+          </div>
+              <div class="preturi-align-row">
+                <h2>AIR FLOW</h2>
+                <h3>200<sup>RON</sup><span class="small"></span></h3>
+          </div>
+        </ul>
+      </div>
+    </div>
+            <!-- preturi protetica dentara -->
+              <div class="pricesSection">
+                <div class="dropdown2">
+                  <button class="dropdown-btn">
+                    <span>Protetică Dentară</span>
+                    <span class="arrow"></span>
+                  </button>
+                
+                <ul class="dropdown-content2">
+              <div class="preturi-align-row">
+                <h2>Coafaj indirect/direct</h2>
+                  <h3>200<sup>RON</sup><span class="small"></span></h3>
+           </div>
+              <div class="preturi-align-row">
+                <h2>Îndepartarea obturaţiei vechi </h2>
+                  <h3>100<sup>RON</sup><span class="small"></span></h3>
+            </div>
+              <div class="preturi-align-row">
+                <h2>Obturaţie fotopolimerizabila mare (3 suprafata)</h2>
+                  <h3>400<sup>RON</sup><span class="small"></span></h3>
+            </div>
+          </ul>
+        </div>
+      </div>
+            <!-- preturi parodontologie -->
+              <div class="pricesSection">
+                <div class="dropdown2">
+                  <button class="dropdown-btn">
+                    <span>Parodontologie</span>
+                    <span class="arrow"></span>
+              </button>
+
+                  <ul class="dropdown-content2">
+              <div class="preturi-align-row">
+                <h2>Coafaj indirect/direct</h2>
+                  <h3>200<sup>RON</sup><span class="small"></span></h3>
+          </div>
+              <div class="preturi-align-row">
+                <h2>Îndepӑrtarea obturaţiei vechi </h2>
+                  <h3>100<sup>RON</sup><span class="small"></span></h3>
+          </div>
+              <div class="preturi-align-row">
+                <h2>Obturaţie fotopolimerizabilӑ mare (3 suprafata)</h2>
+                  <h3>400<sup>RON</sup><span class="small"></span></h3>
+          </div>
+        </ul>
+      </div>
+    </div>
+            <!-- preturi ortodontie -->
+              <div class="pricesSection">
+                <div class="dropdown2">
+                  <button class="dropdown-btn">
+                    <span>Ortodonţie</span>
+                    <span class="arrow"></span>
+                  </button>
+                
+                <ul class="dropdown-content2">
+            <div class="preturi-align-row">
+              <h2>Consultaţie</h2>
+                <h3>200<sup>RON</sup><span class="small"></span></h3>
+        </div>
+            <div class="preturi-align-row">
+              <h2>Plan de tratament</h2>
+                <h3>200<sup>RON</sup><span class="small"></span></h3>
+        </div>
+            <div class="preturi-align-row">
+              <h2>Control aparat mobil/arcada</h2>
+                <h3>150<sup>RON</sup><span class="small"></span></h3>
+        </div>
+            <div class="preturi-align-row">
+              <h2>Aplicare aparat ortodontic fix safir (per arcada)</h2>
+                <h3>3500<sup>RON</sup><span class="small"></span></h3>
+        </div>
+            <div class="preturi-align-row">
+              <h2>Aplicare aparat ortodontic fix metalic (per arcada)</h2>
+                <h3>2500<sup>RON</sup><span class="small"></span></h3>
+        </div>
+            <div class="preturi-align-row">
+              <h2>Bracket nou (ceramic)</h2>
+                <h3>200<sup>RON</sup><span class="small"></span></h3>
+        </div>
+            <div class="preturi-align-row">
+              <h2>Bracket nou (metalic)</h2>
+                <h3>150<sup>RON</sup><span class="small"></span></h3>
+        </div>
+            <div class="preturi-align-row">
+              <h2>Inel nou</h2>
+                <h3>200<sup>RON</sup><span class="small"></span></h3>
+        </div>
+            <div class="preturi-align-row">
+              <h2>Arc nou</h2>
+                <h3>200<sup>RON</sup><span class="small"></span></h3>
+        </div>
+            <div class="preturi-align-row">
+              <h2>Aparat ortodontic mobil (per arcada)</h2>
+                <h3>1500<sup>RON</sup><span class="small"></span></h3>
+        </div>
+            <div class="preturi-align-row">
+              <h2>Activator</h2>
+                <h3>2000<sup>RON</sup><span class="small"></span></h3>
+        </div>
+            <div class="preturi-align-row">
+              <h2>Disjunctor</h2>
+                <h3>2000<sup>RON</sup><span class="small"></span></h3>
+        </div>
+            <div class="preturi-align-row">
+              <h2>Aparat contenţie mobil (per arcada)</h2>
+                <h3>750<sup>RON</sup><span class="small"></span></h3>
+        </div>
+            <div class="preturi-align-row">
+              <h2>Retainer colat (per arcada)</h2>
+                <h3>750<sup>RON</sup><span class="small"></span></h3>
+        </div>
+            <div class="preturi-align-row">
+              <h2>Monobloc contentie</h2>
+                <h3>150<sup>RON</sup><span class="small"></span></h3>
+        </div>
+      </ul>
+    </div>
+  </div>
+            <!-- preturi edodontie -->
+              <div class="pricesSection">
+                <div class="dropdown2">
+                  <button class="dropdown-btn">
+                    <span>Endodonție</span>
+                    <span class="arrow"></span>
+                  </button>
+                
+                  <ul class="dropdown-content2">
+              <div class="preturi-align-row">
+                <h2>Consultaţie</h2>
+                  <h3>200<sup>RON</sup><span class="small"></span></h3>
+          </div>
+              <div class="preturi-align-row">
+                <h2>Plan de tratament</h2>
+                  <h3>200<sup>RON</sup><span class="small"></span></h3>
+          </div>
+              <div class="preturi-align-row">
+                <h2>Izolare diga</h2>
+                  <h3>100<sup>RON</sup><span class="small"></span></h3>
+          </div>
+              <div class="preturi-align-row">
+                <h2>Extirpare vitalӑ cu obturaţie de canal monoradiculari</h2>
+                  <h3>400<sup>RON</sup><span class="small"></span></h3>
+          </div>
+              <div class="preturi-align-row">
+                <h2>Extirpare vitalӑ cu obturaţie de canal biradiculari</h2>
+                  <h3>600<sup>RON</sup><span class="small"></span></h3>
+          </div>
+              <div class="preturi-align-row">
+                <h2>Extirpare vitalӑ cu obturaţie de canal pluriradiculari</h2>
+                  <h3>900<sup>RON</sup><span class="small"></span></h3>
+          </div>
+              <div class="preturi-align-row">
+                <h2>Retratament monoradiculari</h2>
+                  <h3>500-700<sup>RON</sup><span class="small"></span></h3>
+          </div>
+              <div class="preturi-align-row">
+                <h2>Retratament pluriradiculari</h2>
+                  <h3>700-1400<sup>RON</sup><span class="small"></span></h3>
+          </div>
+              <div class="preturi-align-row">
+                <h2>Pansament provizoriu</h2>
+                  <h3>150<sup>RON</sup><span class="small"></span></h3>
+          </div>
+              <div class="preturi-align-row">
+                <h2>Hidroxid de calciu endocanalicular</h2>
+                  <h3>150<sup>RON</sup><span class="small"></span></h3>
+          </div>
+              <div class="preturi-align-row">
+                <h2>Tratament mecanic de canal urgenta</h2>
+                  <h3>200<sup>RON</sup><span class="small"></span></h3>
+          </div>
+              <div class="preturi-align-row">
+                <h2>Indepartare RCR</h2>
+                  <h3>250<sup>RON</sup><span class="small"></span></h3>
+          </div>
+              <div class="preturi-align-row">
+                <h2>Indepartare pivot fibra de sticla</h2>
+                  <h3>250<sup>RON</sup><span class="small"></span></h3>
+          </div>
+              <div class="preturi-align-row">
+                <h2>Inchidere perforatiii MTA</h2>
+                  <h3>600<sup>RON</sup><span class="small"></span></h3>
+          </div>
+              <div class="preturi-align-row">
+                <h2>Indepartare ace rupte(per canal)</h2>
+                  <h3>300-600<sup>RON</sup><span class="small"></span></h3>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+            <div class="pricesSection">
+              <div class="dropdown2" style="border-right: 0px solid black;">
+                <!-- esthetic -->
+                <ul class="dropdown-content2 ">
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="why-pick-us-section">
+<!-- start of card procedures -->
+<div class="procedure-header">
+  <h3 id="#page2" class="hidden2 line">TRATAMENTELE <strong style="color:rgb(90, 132, 158)">NOASTRE</strong> </h3>
+</div>
+
+<section class="procedures-section horizontal-scroll-wrapper"><!--horizontal scroll for mobile  -->
+
+  <div class="procedure-card  hidden ">
+    <div class="procedure-icon">
+      <img src="photos/consultatie.png">
+    </div>
+    <h3>CONSULTAŢIE</h3>
+    <p class="truncate">Consultația stomatologică reprezintă o întâlnire între pacient și medicul dentist, în cadrul
+      căreia se efectuează o
+      evaluare detaliată a stării generale a sănătății orale a pacientului. Aceasta este o etapă esențială în stabilirea
+      unui
+      diagnostic precis și în elaborarea unui plan de tratament adecvat pentru nevoile individuale ale pacientului.</p>
+    <a id="procedure-card-button" class="price-slide3 bubble-button" data-target="more-info-1">AFLA MAI MULTE</a>
+  </div>
+  <div class="procedure-card hidden">
+    <div class="procedure-icon">
+      <img src="photos/chirurgie.png">
+    </div>
+    <h3 class="">CHIRURGIE</h3>
+    <p class="truncate">Chirurgia dentară este o ramură a stomatologiei care se ocupă de diagnosticarea, tratamentul și
+      intervențiile
+      chirurgicale asupra afecțiunilor și problemelor dentare și maxilofaciale. Aceasta implică proceduri chirurgicale
+      care
+      vizează îndepărtarea dinților afectați, tratamentul bolilor parodontale, inserarea implanturilor dentare,
+      corectarea
+      anomaliilor dentare și faciale, precum și alte intervenții chirurgicale orale.</p>
+    <a id="procedure-card-button" class="price-slide3 bubble-button" data-target="more-info-2">AFLA MAI MULTE</a>
+  </div>
+  <div class="procedure-card hidden ">
+    <div class="procedure-icon">
+      <img src="photos/endodontie.png">
+    </div>
+    <h3>ODONTOLOGIE</h3>
+    <p class="truncate">Odontologia este acea specialitate a stomatologiei care tratează cariile dentare și leziunile
+      necarioase (fracturi,
+      distrofii, leziuni de uzură dentară). În mod frecvent, dinții sunt atacați și distruși de carii. Acestea
+      penetrează
+      structura dintelui și cauzează modificări anatomice la suprafața acestuia.</p>
+    <a id="procedure-card-button" class="price-slide3 bubble-button" data-target="more-info-3">AFLA MAI MULTE</a>
+  </div>
+  <div class="procedure-card hidden">
+    <div class="procedure-icon">
+      <img src="photos/pedodontie.png">
+    </div>
+    <h3>PEDODONŢIE</h3>
+    <p class="truncate">Pedodonția, cunoscută și sub numele de stomatologie pediatrică sau odontopediatrie, este o
+      ramură specializată a
+      stomatologiei care se concentrează pe îngrijirea și tratamentul sănătății orale a copiilor, de la sugari până la
+      adolescenți. Pedodontia se axează pe nevoile specifice ale copiilor și pe abordări terapeutice adaptate vârstei și
+      dezvoltării lor.</p>
+    <a id="procedure-card-button" class="price-slide3 bubble-button" data-target="more-info-4">AFLA MAI MULTE</a>
+  </div>
+  <div class="procedure-card hidden">
+    <div class="procedure-icon">
+      <img src="photos/profilaxie-procedure.png">
+    </div>
+    <h3>PROFILAXIE</h3>
+    <p class="truncate">Profilaxia dentară este cea mai simplă și accesibilă metodă de tratament. Profilaxia constă
+      dintr-un set de proceduri
+      care au ca scop prevenirea apariției cariei dentare și a bolii parodontale. Mai mult, profilaxia previne și
+      evoluția
+      acestor afecțiuni odată ce ele au apărut.</p>
+    <a id="procedure-card-button" class="price-slide3 bubble-button" data-target="more-info-5">AFLA MAI MULTE</a>
+  </div>
+  <div class="procedure-card hidden">
+    <div class="procedure-icon">
+      <img src="photos/protetica.png">
+    </div>
+    <h3>PROTETICĂ</h3>
+    <p class="truncate">Protetica dentară este ramura cea mai complexă a stomatologiei. Ea analizează arcadele dentare
+      afectate de pierderea
+      unuia sau a mai multor dinți (edentație) sau de tocirea acestora (atriție) și găsește cele mai potrivite soluții
+      de
+      tratament în scopul refacerii echilibrului estetic, funcțional și musculo-articular.</p>
+    <a id="procedure-card-button" class="price-slide3 bubble-button" data-target="more-info-6">AFLA MAI MULTE</a>
+  </div>
+  <div class="procedure-card hidden">
+    <div class="procedure-icon">
+      <img src="photos/parodontologie.png">
+    </div>
+    <h3>PARODONTOLOGIE</h3>
+    <p class="truncate">Este acea specialitate a medicinei dentare care se ocupă cu studiul întregului sistem ce menține
+      dinții în oasele
+      maxilare, acest sistem fiind numit parodonțiu sau spațiu periodontal. Parodontologia studiază anatomia, fiziologia
+      parodonțiului marginal, precum și bolile care îl afectează și posibilitățile de tratament.</p>
+    <a id="procedure-card-button" class="price-slide3 bubble-button" data-target="more-info-7">AFLA MAI MULTE</a>
+  </div>
+  <div class="procedure-card hidden">
+    <div class="procedure-icon">
+      <img src="photos/ortodontie.png">
+    </div>
+    <h3>ORTODONŢIE</h3>
+    <p class="truncate">Ortodonția este acea ramură a medicinei dentare care se ocupă cu profilaxia anomaliilor
+      dento-faciale. Pentru ca un
+      medic stomatolog să obțină această specializare, este necesă absolvirea unui nou stagiu de pregătire, în urma
+      căruia se
+      vor dobândi toate cunoștințele necesare. Acesta este motivul pentru care, vei întâlni atât cabinete stomatologice
+      specializate pe procedurile ortodontice, dar și cabinete de profil generalist la care poți apela pentru verificări
+      și
+      proceduri de specialitate în ortodonție.</p>
+    <a id="procedure-card-button" class="price-slide3 bubble-button" data-target="more-info-8">AFLA MAI MULTE</a>
+  </div>
+  <div class="procedure-card hidden">
+    <div class="procedure-icon">
+      <img src="photos/endodontie.png">
+    </div>
+    <h3>ENDODONŢIE</h3>
+    <p class="truncate">Endodontia este ramura medicinei dentare care se ocupa cu tratamentul afectiunilor aparute in
+      interiorul dintilor. Pulpa
+      dentara este un tesut situat in interiorul dintelui si are in compozitia sa nervi, vase de sange si tesut. Pulpa,
+      care
+      contine nervi, precum tesutul limfatic si tesutul fibros, poate suferi diverse afectiuni si, prin urmare, nu este
+      in
+      masura sa se repare. Ulterior, va fi necesar un tratament de canal endodontic sau de radacina.</p>
+    <a id="procedure-card-button" class="price-slide3 bubble-button" data-target="more-info-9">AFLA MAI MULTE</a>
+  </div>
+  </div>
+
+</section>
+
+      <!-- reviews-section -->
+<div class="container-reviews">
+
+  <div class="center-align">
+    <div class="reviews-background ">
+      <h2 class="2">
+      </h2>
+      <div class="bubble-speech hidden2" style="overflow-x:hidden;">
+        <h4></h4>
+        <!-- growing statistics -->
+        <div class="statistics ">
+          <div class="reviewsCount hidden3 child ">
+            <div class="textReviews ">
+              <h4>Recenzii</h4>
+              <h4>Google</h4>
+            </div>
+            <div class="progressBar">
+              <div class="circular-progress" data-inner-circle-color="white" data-percentage="120"
+                data-progress-color="rgba(40, 139, 30, 95%)" data-bg-color="lightgray">
+                <div class="inner-circle"></div>
+                <p class="percentage">0</p>
+              </div>
+            </div>
+          </div>
+          <div class="clientCount hidden3 child">
+            <div class="textReviews">
+              <h4>Pacienti</h4>
+              <h4>multumiti</h4>
+            </div>
+            <div class="progressBar">
+              <div class="circular-progress" data-inner-circle-color="white" data-percentage="1500"
+                data-progress-color="rgba(40, 139, 30, 95%)" data-bg-color="lightgray">
+                <div class="inner-circle"></div>
+                <p class="percentage">0</p>
+              </div>
+            </div>
+          </div>
+          <div class="experienceCount hidden3 child">
+            <div class="textReviews">
+              <h4>De cati ani </h4>
+              <h4>facem asta</h4>
+            </div>
+            <div class="circular-progress" data-inner-circle-color="white" data-percentage="10"
+              data-progress-color="rgba(40, 139, 30, 95%)" data-bg-color="rgba(136, 136, 136,95%)">
+              <div class="inner-circle"></div>
+              <p class="percentage">0</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- middle text -->
+        <h5 class="hidden3">Suntem pasionati de zambete si de a detine ultimele tehnologii, dorim sa ducem stomatologia
+          cosmetica la cel mai inalt
+          nivel ! Scopul nostru este de a-ti furniza cel mai alb, mai stralucitor si mai perfect zambet, conform
+          dorintelor si
+          bugetului tau.</h5>
+
+        <!-- call to action buttons -->
+        <div class="buttons hidden2">
+          <a id="procedure-card-button " class="hidden2 child price-slide3 bubble-button"
+            data-target="more-info-1">Interesat de o
+            consultatie?</a>
+          <a href="#contact1" class="bubble-button hidden2 child" id="contact-button">Fa-ti o programare</a>
+        </div>
+      </div>
+
+
+
+      <!-- divider shape -->
+      <div class="custom-shape-divider-top-1694120304">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"></path>
+        </svg>
+      </div>
+    </div>
+    <div class="reviews-body">
+      <div class="custom-shape-divider-bottom-1694615539">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"></path>
+        </svg>
+      </div>
+      <!-- reviews -->
+      <div class="reviews-header">
+        <h2 class="hidden2">Ce zic pacientii despre noi
+        </h2>
+      </div>
+      <div class="slider hidden2">
+      
+        <button id="cycleButton3"><img style="opacity:0.65;" src="photos/arrow_left.png"></button>
+      
+        <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav" />
+        <input type="radio" name="slider" title="slide2" class="slider__nav" />
+        <input type="radio" name="slider" title="slide3" class="slider__nav" />
+        <input type="radio" name="slider" title="slide4" class="slider__nav" />
+        <input type="radio" name="slider" title="slide5" class="slider__nav" />
+        <input type="radio" name="slider" title="slide6" class="slider__nav" />
+        <input type="radio" name="slider" title="slide7" class="slider__nav" />
+        <input type="radio" name="slider" title="slide8" class="slider__nav" />
+        <input type="radio" name="slider" title="slide9" class="slider__nav" />
+        <input type="radio" name="slider" title="slide10" class="slider__nav" />
+        <button id="cycleButton2"><img style="opacity:0.65;" src="photos/arrow_right.png"></button>
+      
+      
+        <div class="slider__inner hidden2">
+      
+          <div class="slider__contents">
+      
+            <i class="slider__image 2"><img src="photos/review-1.png"></i>
+            <h2 class="slider__caption 2">Vlad Anicai</h2>
+            <p class="slider__txt 2">
+              Dr. Sirbu a lucrat foarte profesionist, nu m-a durut deloc extractia facuta. Recomand!
+              <br>
+              <a class="bubble-button" href="https://g.co/kgs/RpEoFP" target="_blank">Google reviews</a>
+            </p>
+      
+          </div>
+          <div class="slider__contents "><i class="slider__image  2"><img src="photos/review-2.png"></i>
+            <h2 class="slider__caption  2  ">Alexandru Voicu</h2>
+            <p class="slider__txt  2"> Dr. Ovidiu Sirbu este profesionist! Recomand pentru implanturi! Am facut si o detartraj
+              si sunt foarte multumit!
+              <br>
+              <a class="bubble-button" href="https://g.co/kgs/GKasDD" target="_blank">Google reviews</a>
+            </p>
+          </div>
+          <div class="slider__contents"><i class="slider__image  2"><img src="photos/review-3.png"></i>
+            <h2 class="slider__caption  2">Alexandra Albesteanu</h2>
+            <p class="slider__txt  2">Unul dintre cele mai bune cabinete dintre cele in care am fost. Medici devotati carora
+              le pasa de pacienti. O
+              experienta placuta, fara durere sau emotii.
+              <br>
+              <a class="bubble-button" href="https://g.co/kgs/UF2hHb" target="_blank">Google reviews</a>
+            </p>
+          </div>
+          <div class="slider__contents"><i class="slider__image  2"><img src="photos/review-4.png"></i>
+            <h2 class="slider__caption  2">Florentina Dobre</h2>
+            <p class="slider__txt  2">Servicii de calitate! Personal profesionist! Cu alte cuvinte, o experiență de nota 10.
+              Mulțumesc!
+              <br>
+              <a class="bubble-button" href="https://g.co/kgs/VjofWV" target="_blank">Google reviews</a>
+            </p>
+          </div>
+          <div class="slider__contents "><i class="slider__image  2"><img src="photos/review-5.png"></i>
+            <h2 class="slider__caption  2">Cirstea Andrei</h2>
+            <p class="slider__txt  2">Recomand dr. Sirbu Ovidiu pentru albire, sunt foarte multumit!
+              <br>
+              <a class="bubble-button" href="https://g.co/kgs/uD8tjh" target="_blank">Google reviews</a>
+            </p>
+          </div>
+          <div class="slider__contents"><i class="slider__image  2"><img src="photos/review-6.png"></i>
+            <h2 class="slider__caption  2">Monalis Ciolan</h2>
+            <p class="slider__txt  2">Dr Sirbu Ovidiu un profesionist! Recomand și pentru implanturi!
+              <br>
+              <a class="bubble-button" href="https://g.co/kgs/ewXyb5" target="_blank">Google reviews</a>
+            </p>
+          </div>
+          <div class="slider__contents"><i class="slider__image  2"><img src="photos/review-7.png"></i>
+            <h2 class="slider__caption  2">Victor Balas</h2>
+            <p class="slider__txt  2">Dr. Ovidiu Sirbu lucreaza foarte bine si profesionist, implanturi si extractii fara
+              durere!
+              <br>
+              <a class="bubble-button" href="https://g.co/kgs/jaUNJW" target="_blank">Google reviews</a>
+            </p>
+          </div>
+          <div class="slider__contents "><i class="slider__image  2"><img src="photos/review-8.png"></i>
+            <h2 class="slider__caption  2">Alexandru Voicu</h2>
+            <p class="slider__txt  2">Dr. Ovidiu Sirbu este profesionist! Recomand pentru implanturi! Am facut si o detartraj
+              si sunt foarte multumit!
+              <br>
+              <a class="bubble-button" href="https://g.co/kgs/B99qNF" target="_blank">Google reviews</a>
+            </p>
+          </div>
+          <div class="slider__contents"><i class="slider__image  2"><img src="photos/review-9.png"></i>
+            <h2 class="slider__caption  2">Bogdan Ianov</h2>
+            <p class="slider__txt  2">Medici profesioniști, au respectat programările, iat cabinetul arata foarte bine.
+              <br>
+              <a class="bubble-button" href="https://g.co/kgs/6APQuC" target="_blank">Google reviews</a>
+            </p>
+          </div>
+          <div class="slider__contents"><i class="slider__image  2"><img src="photos/review-10.png"></i>
+            <h2 class="slider__caption  2">adrian sirbu</h2>
+            <p class="slider__txt  2">Profesionisti toti doctorii din cabinet, foarte implicati si cu atitudine buna.
+              <br>
+              <a class="bubble-button" href="https://g.co/kgs/KJcRhF" target="_blank">Google reviews</a>
+            </p>
+      
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      
+      <!-- gallery section -->
+      <div id="galerie-section">
+        <div class="photo-align ">
+          <div class="header-photo "></div>
+          <div class="gallery" id="galerie1">
+            <!-- divider -->
+            <div class="custom-shape-divider-bottom-1694619511">
+              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path
+                  d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                  class="shape-fill"></path>
+              </svg>
+            </div>
+            <!-- photo carousel -->
+            <main id="carousel">
+      
+              <div class="item hidden"><img src="photos/galerie-2.jpg" alt="Image 1"></div>
+              <div class="item hidden"><img src="photos/galerie-4.jpg" alt="Image 2"></div>
+              <div class="item hidden"><img src="photos/galerie-3.jpg" alt="Image 3"></div>
+              <div class="item hidden"><img src="photos/galerie-5.jpg" alt="Image 4"></div>
+              <div class="item hidden"><img src="photos/galerie-1.jpg" alt="Image 5"></div>
+              <div class="carousel-buttons">
+                <button class="carousel-prev-photo">Inapoi</button>
+                <button class="carousel-next-photo">Inainte</button>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+  
+          <!-- procedure sections with information - hidden by default and enabled by buttons  -->
+<div class="more-info-section" id="hide-more-info">
+<div class="secondSlide-procedures" style="display:none;">
+
+  <div class="horizontal-scroll-wrapper2">
+    <div class="procedure-card2   ">
+
+      <div class="procedure-icon2">
+        <img src="photos/consultatie.png">
+
+      </div>
+      <h3>CONSULTAŢIE</h3>
+      <p class="truncate2">Consultația stomatologică reprezintă o întâlnire între pacient și medicul dentist, în cadrul
+        căreia se efectuează o
+        evaluare detaliată a stării generale a sănătății orale a pacientului. Aceasta este o etapă esențială în
+        stabilirea
+        unui
+        diagnostic precis și în elaborarea unui plan de tratament adecvat pentru nevoile individuale ale pacientului.
+      </p>
+      <a id="procedure-card-button" class="price-slide5 bubble-button" data-target="more-info-1">AFLA MAI MULTE</a>
+    </div>
+    <div class="procedure-card2 ">
+      <div class="procedure-icon2">
+        <img src="photos/chirurgie.png">
+      </div>
+      <h3>CHIRURGIE</h3>
+      <p class="truncate2">Chirurgia dentară este o ramură a stomatologiei care se ocupă de diagnosticarea, tratamentul
+        și
+        intervențiile
+        chirurgicale asupra afecțiunilor și problemelor dentare și maxilofaciale. Aceasta implică proceduri chirurgicale
+        care
+        vizează îndepărtarea dinților afectați, tratamentul bolilor parodontale, inserarea implanturilor dentare,
+        corectarea
+        anomaliilor dentare și faciale, precum și alte intervenții chirurgicale orale.</p>
+      <a id="procedure-card-button" class="price-slide5 bubble-button" data-target="more-info-2">AFLA MAI MULTE</a>
+    </div>
+    <div class="procedure-card2 ">
+      <div class="procedure-icon2">
+        <img src="photos/endodontie.png">
+      </div>
+      <h3>ODONTOLOGIE</h3>
+      <p class="truncate2">Odontologia este acea specialitate a stomatologiei care tratează cariile dentare și leziunile
+        necarioase (fracturi,
+        distrofii, leziuni de uzură dentară). În mod frecvent, dinții sunt atacați și distruși de carii. Acestea
+        penetrează
+        structura dintelui și cauzează modificări anatomice la suprafața acestuia.</p>
+      <a id="procedure-card-button" class="price-slide5 bubble-button" data-target="more-info-3">AFLA MAI MULTE</a>
+    </div>
+    <div class="procedure-card2 ">
+      <div class="procedure-icon2">
+        <img src="photos/pedodontie.png">
+      </div>
+      <h3>PEDODONŢIE</h3>
+      <p class="truncate2">Pedodonția, cunoscută și sub numele de stomatologie pediatrică sau odontopediatrie, este o
+        ramură
+        specializată a
+        stomatologiei care se concentrează pe îngrijirea și tratamentul sănătății orale a copiilor, de la sugari până la
+        adolescenți. Pedodontia se axează pe nevoile specifice ale copiilor și pe abordări terapeutice adaptate vârstei
+        și
+        dezvoltării lor.</p>
+      <a id="procedure-card-button" class="price-slide5 bubble-button" data-target="more-info-4">AFLA MAI MULTE</a>
+    </div>
+    <div class="procedure-card2 ">
+      <div class="procedure-icon2">
+        <img src="photos/profilaxie-procedure.png">
+      </div>
+      <h3>PROFILAXIE</h3>
+      <p class="truncate2">Profilaxia dentară este cea mai simplă și accesibilă metodă de tratament. Profilaxia constă
+        dintr-un set de proceduri
+        care au ca scop prevenirea apariției cariei dentare și a bolii parodontale. Mai mult, profilaxia previne și
+        evoluția
+        acestor afecțiuni odată ce ele au apărut.</p>
+      <a id="procedure-card-button" class="price-slide5 bubble-button" data-target="more-info-5">AFLA MAI MULTE</a>
+    </div>
+    <div class="procedure-card2 ">
+      <div class="procedure-icon2">
+        <img src="photos/protetica.png">
+      </div>
+      <h3>PROTETICĂ</h3>
+      <p class="truncate2">Protetica dentară înseamnă refacerea dinților prin lucrări fixe: fațete, coroane și punți
+        dentare,
+        precum și prin
+        lucrări mobile sau mobilizabile: proteze totale sau parțiale, proteze scheletate cu sisteme speciale, proteze pe
+        implanturi.</p>
+      <a id="procedure-card-button" class="price-slide5 bubble-button" data-target="more-info-6">AFLA MAI MULTE</a>
+    </div>
+    <div class="procedure-card2 ">
+      <div class="procedure-icon2">
+        <img src="photos/parodontologie.png">
+      </div>
+      <h3>PARODONTOLOGIE</h3>
+      <p class="truncate2">Este acea specialitate a medicinei dentare care se ocupă cu studiul întregului sistem ce
+        menține
+        dinții în oasele
+        maxilare, acest sistem fiind numit parodonțiu sau spațiu periodontal. Parodontologia studiază anatomia,
+        fiziologia
+        parodonțiului marginal, precum și bolile care îl afectează și posibilitățile de tratament.</p>
+      <a id="procedure-card-button" class="price-slide5 bubble-button" data-target="more-info-7">AFLA MAI MULTE</a>
+    </div>
+    <div class="procedure-card2 ">
+      <div class="procedure-icon2">
+        <img src="photos/ortodontie.png">
+      </div>
+      <h3>ORTODONŢIE</h3>
+      <p class="truncate2">Ortodonţia este o specializare a medicinei dentare care se ocupă de corectarea anomaliilor
+        dentomaxilare. Ortodonția
+        este specialitatea care se ocupă cu îndreptarea poziției dinților, reglarea ocluziei (mușcăturii) și a
+        rapoartelor
+        dintre cele două maxilare.</p>
+      <a id="procedure-card-button" class="price-slide5 bubble-button" data-target="more-info-8">AFLA MAI MULTE</a>
+    </div>
+    <div class="procedure-card2 ">
+      <div class="procedure-icon2">
+        <img src="photos/endodontie.png">
+      </div>
+      <h3>ENDODONŢIE</h3>
+      <p class="truncate2">Endodonția se ocupă cu tratamentul afecțiunilor din interiorul dintelui, mai exact cu
+        afecțiunile
+        pulpei, cu prevenirea,
+        diagnosticarea și tratamentul patologiei pulpare.</p>
+      <a id="procedure-card-button" class="price-slide5 bubble-button" data-target="more-info-9">AFLA MAI MULTE</a>
+    </div>
+
+  </div>
+  <div class="more-info-buttons">
+    <a href="tel:0799.399.599" class="suna-button mib2">Suna acum</a>
+    <a href="index.html" class="suna-button mib3">Inapoi</a>
+
+  </div>
+  <div class="more-info-info">
+    <div class="info-1">
+      <img src="photos/telefon.png" style="width:26px;height: 26px; margin-top:-3px;">
+      <p style="margin-left:-10px">0799.399.599</p>
+    </div>
+    <div class="info-2">
+      <img src="photos/calendar-icon.png" style="width:50px;height: 50px;margin-top:5px;padding:5px">
+
+    </div>
+    <div class="info-3">
+
+      <p>L-V 08:00 - 20:00 </p>
+      <p style="margin-top:-20px">S-D 08:00 - 13:00 </p>
+
+    </div>
+    <div class="info-4">
+      <img src="photos/adress.png" style="width:26px;height: 26px; margin-top:-2px;">
+      <a target="_blank"
+        href="https://www.google.com/maps/dir//Strada+Sergent+Ion+Iriceanu+20-22,+Bucure%C8%99ti/@44.3904378,26.0571161,13.17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x40b1fe0b7b02088d:0x4f125562497c7268!2m2!1d26.1348675!2d44.3800519?entry=ttu">
+        <p style="margin-left:-13px;">Strada Sergent Ion Iriceanu 20-22</p>
+      </a>
+
+    </div>
+  </div>
+</div>
+      <!-- consultatie section -->
+    <div class="container-more-info" id="more-info-1">
+      <div class="container-consultatie" id="more-info-title">
+        <div class="info-header">
+          <h3 class="line child">Consultație Stomatologică</h3>
+        </div>
+        <div id="consultatie" class="more-info-text-pics 2">
+          <p class="hidden2 child">Consultația stomatologică reprezintă o întâlnire între pacient și medicul dentist, în
+            cadrul căreia se efectuează o evaluare detaliată a stării generale a sănătății orale a pacientului. Aceasta este
+            o etapă esențială în stabilirea unui diagnostic precis și în elaborarea unui plan de tratament adecvat pentru
+            nevoile individuale ale pacientului.</p>
+          <img src="photos/galerie-2.jpg" class="3">
+        </div>
+        <div class="schedule-benefits ">
+          <div class="container-title element-2">
+            <div class="consultatie-title">
+              <h2 class="hidden3 child">Care sunt beneficiile unei
+                consultații stomatologice?</h2>
+            </div>
+            <div class="consultatie-list">
+              <ul>
+                <li class="hidden2 child">Afli din timp ce problemă dentară ai</li>
+                <li class="hidden2 child"> Medicul dentist îți oferă un plan de tratament personalizat</li>
+                <li class="hidden2 child">Știi de la început costurile</li>
+              </ul>
+            </div>
+          </div>
+          <div class="element-3">
+            <div class="consultatie-sub-title">
+            </div>
+            <div class="consultatie-test">
+              <p class="hidden2 child"><strong>La prima vizită, medicul stomatolog va efectua un control dentar
+                  amănunțit.</strong> </p>
+              <p class="hidden2 child">De regulă, se vor urmări:</p>
+              <ul>
+                <li class="hidden2 child"><strong>Examinarea radiografiilor</strong> – acestea ne dau informații despre
+                  posibile carii ascunse, tumori,
+                  chisturi sau retracții osoase dar ne evidențiază și pozițiile dinților și a rădăcinilor;</li>
+                <li class="hidden2 child"><strong>Examinarea feței</strong> – se examinează fața, gâtul, buzele, limba,
+                  gingiile și obrajii;</li>
+                <li class="hidden2 child"><strong>Evaluarea bolilor gingivale</strong> – se examinează gingiile și osul
+                  înconjurător pentru a evalua
+                  apariția bolilor parodontale;</li>
+                <li class="hidden2 child"><strong>Examinarea dinților</strong> – se vor examina cu instrumente specifice
+                  toate suprafețele dentare în
+                  vederea descoperirii cariilor;</li>
+                <li class="hidden2 child"><strong>Examinarea restaurațiilor existente</strong> – se verifică toate plombele,
+                  coroanele, punțile etc.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="slide-preturi" class="preturi-header">
+          <a href="#" class="toggleButton" id="arrowButton1" data-container="consultatieContainer">
+            Preturi
+            <img style="width: 20px; height: 20px; transition: transform 0.3s;" src="photos/arrow-right.png" id="arrowIcon">
+          </a>
+        </div>
+    
+        <div class="consultatie preturi-align-row" id="consultatieContainer">
+          <button class="suna-button appointment" data-target="contact-form-1">Programează-te</button>
+          <button class="suna-button"><a href="tel:9999-999-999">Suna acum</a></button>
+          <div class="grid-2-5-consultatie">
+            <h2>Consultaţia si plan tratament</h2>
+            <h3><span>200<sup>RON</sup></span></h3>
+          </div>
+          <div class="grid-2-5-consultatie ">
+            <h2>Consultaţie de specialitate </h2>
+            <h3><span>200<sup>RON</sup></span></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- chirurgie section -->
+<div class="container-more-info" id="more-info-2">
+  <div class="container-chirurgie" id="more-info-2">
+    <div class="info-header">
+      <h3 class="line ">Chirurgie</h3>
+    </div>
+    <h1 class="page-title">Chirurgia dentară poate include următoarele proceduri:</h1>
+    <div class="sub-section-container2">
+      <div class="sub-section sub-section-1" style=" ">
+        <h2 class="sub-section-title ">Implantologie dentară</h2>
+        <a href="albire-dentara.html">
+
+        </a>
+        <div class="paragraph-area ">
+          <p>Inserarea implanturilor dentare în osul maxilarului sau al mandibulei pentru înlocuirea dinților lipsă și
+            restaurarea funcției dentare. </p>
+        </div>
+
+      </div>
+      <div class="sub-section sub-section-7">
+        <h2 class="sub-section-title">Chirurgia ortodontică</h2>
+        <a href="aparate-dentare.html">
+
+        </a>
+        <div class="paragraph-area">
+
+          <p>Corectarea anomaliilor dento-maxilare prin intermediul intervențiilor chirurgicale, cum ar fi alungirea sau
+            scurtarea
+            maxilarului sau mandibulei pentru a obține o aliniere corespunzătoare a dinților și a maxilarelor. </p>
+        </div>
+
+      </div>
+      <div class="sub-section sub-section-3">
+        <h2 class="sub-section-title ">Extracția dentară </h2>
+        <a href="coroane-dentare.html">
+
+        </a>
+        <div class="paragraph-area">
+          <p>Îndepărtarea dinților afectați, deteriorați sau impactați, precum și extracția dinților de minte (molarul
+            de minte)
+            sau a dinților supranumerari (dinți în plus). </p>
+        </div>
+
+      </div>
+      <div class="sub-section sub-section-4 ">
+        <h2 class="sub-section-title ">Chirurgia endodontică </h2>
+        <a href="fatete-dentare.html">
+
+        </a>
+        <div class="paragraph-area">
+          <p>Intervenții chirurgicale realizate la nivelul rădăcinii dintelui pentru tratarea afecțiunilor endodontice,
+            cum ar fi
+            îndepărtarea chisturilor sau a leziunilor apicale. </p>
+
+        </div>
+
+      </div>
+      <div class="sub-section sub-section-5">
+        <h2 class="sub-section-title ">Chirurgia maxilofacială </h2>
+        <a href="fatete-dentare.html">
+
+        </a>
+        <div class="paragraph-area">
+          <p>Intervenții chirurgicale complexe pentru tratarea afecțiunilor și traumatismelor faciale, inclusiv a
+            defectelor congenitale, a fracturilor maxilare sau a tumorilor maxilofaciale. </p>
+        </div>
+
+      </div>
+
+      <div class="sub-section sub-section-6" style=" ">
+        <h2 class="sub-section-title ">Chirurgia parodontală</h2>
+        <a href="fatete-dentare.html">
+
+        </a>
+        <div class="paragraph-area">
+          <p>Tratamentul afecțiunilor gingivale și ale țesuturilor de susținere ale dinților, precum gingivita sau boala
+            parodontală avansată. Aceste proceduri pot include curățarea radiculară, eliminarea pungilor parodontale sau
+            regenerarea țesuturilor pierdute. </p>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="chirurgie-programare">
+
+    </div>
+    <div class="line"></div>
+    <div class="preturi-header">
+
+      <a href="#" class="toggleButton" id="arrowButton2" data-container="consultatieContainer2">
+        Preturi
+        <img style="width: 20px; height: 20px; transition: transform 0.3s;" src="photos/arrow-right.png"
+          id="arrowIcon2">
+      </a>
+    </div>
+    <div class="consultatie preturi-align-row" id="consultatieContainer2">
+      <button class="suna-button appointment" data-target="contact-form-2">Programează-te</button>
+      <button class="suna-button"><a href="tel:9999-999-999">Suna acum</a></button>
+
+
+      <div class="grid-2-5-consultatie ">
+        <h2>Anestezie atraumatica (injectabila) </h2>
+        <h3>200<sup>RON</sup><span class="small"></span></h3>
+
+      </div>
+      <div class="grid-2-5-consultatie ">
+        <h2>Extracţie dinte parodontotic </h2>
+        <h3>150<sup>RON</sup><span class="small"></span></h3>
+
+      </div>
+      <div class="grid-2-5-consultatie ">
+        <h2>Extracţie monoradiculari </h2>
+        <h3>200<sup>RON</sup><span class="small"></span></h3>
+
+      </div>
+      <div class="grid-2-5-consultatie ">
+        <h2>Extracţie pluriradiculari </h2>
+        <h3>350<sup>RON</sup><span class="small"></span></h3>
+
+      </div>
+      <div class="grid-2-5-consultatie ">
+        <h2>Extracţie rest radicular </h2>
+        <h3>350<sup>RON</sup><span class="small"></span></h3>
+      </div>
+      <div class="grid-2-5-consultatie ">
+        <h2>Extracţie molar de minte erupt </h2>
+        <h3>450<sup>RON</sup><span class="small"></span></h3>
+      </div>
+      <div class="grid-2-5-consultatie ">
+        <h2>Extracţie molar de minte inclus </h2>
+        <h3>500-900<sup>RON</sup><span class="small"></span></h3>
+
+      </div>
+
+
+      <div class="grid-2-5-consultatie 2">
+        <h2>Extracţie canin inclus </h2>
+        <h3>600-900<sup>RON</sup><span class="small"></span></h3>
+
+      </div>
+      <div class="grid-2-5-consultatie  2">
+        <h2>Extracţie complicata (traumatica) </h2>
+        <h3>350-500<sup>RON</sup><span class="small"></span></h3>
+
+      </div>
+      <div class="grid-2-5-consultatie  2">
+        <h2>Sutura postextracţionala </h2>
+        <h3>100<sup>RON</sup><span class="small"></span></h3>
+
+      </div>
+      <div class="grid-2-5-consultatie  2">
+        <h2>Tratament alveolita postextracţionala </h2>
+        <h3>100<sup>RON</sup><span class="small"></span></h3>
+      </div>
+      <div class="grid-2-5-consultatie  2">
+        <h2>Tratamentul hemoragiei postextracţionale per sedinta </h2>
+        <h3>150<sup>RON</sup><span class="small"></span></h3>
+      </div>
+      <div class="grid-2-5-consultatie  2">
+        <h2>Antibiotic local </h2>
+        <h3>100<sup>RON</sup><span class="small"></span></h3>
+      </div>
+      <div class="grid-2-5-consultatie  2">
+        <h2>Decapuşonare </h2>
+        <h3>150<sup>RON</sup><span class="small"></span></h3>
+      </div>
+      <div class="grid-2-5-consultatie  3">
+        <h2>Incizie – abces gingival </h2>
+        <h3>200<sup>RON</sup><span class="small"></span></h3>
+
+      </div>
+      <div class="grid-2-5-consultatie  3">
+        <h2>Implant dentar </h2>
+        <h3>450-850<sup>EUR</sup><span class="small"></span></h3>
+
+      </div>
+      <div class="grid-2-5-consultatie  3">
+        <h2>Rezecţie apicala </h2>
+        <h3>500-900<sup>RON</sup><span class="small"></span></h3>
+
+      </div>
+      <div class="grid-2-5-consultatie  3">
+        <h2>Lifting sinusal(includ biomaterialele) </h2>
+        <h3>500-1000<sup>EUR</sup><span class="small"></span></h3>
+
+      </div>
+      <div class="grid-2-5-consultatie  3">
+        <h2>Gingivoplastie per dinte </h2>
+        <h3>100<sup>RON</sup><span class="small"></span></h3>
+      </div>
+      <div class="grid-2-5-consultatie  3">
+        <h2>Gingivoalveoloplastie per dinte </h2>
+        <h3>400<sup>RON</sup><span class="small"></span></h3>
+      </div>
+      <div class="grid-2-5-consultatie  3">
+        <h2>Adiţie de os(nu include pretul biomaterialelor) </h2>
+        <h3>250<sup>EUR</sup><span class="small"></span></h3>
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <!-- odontologie section -->
+    <div class="container-more-info" id="more-info-3">
+      <div class="container-odontologie">
+        <div class="info-header">
+          <h3 class="line ">Odontologie</h3>
+        </div>
+        <div class="more-info-text-pics 2">
+          <p class="hidden2">Odontologia se ocupă de tratarea <strong>leziunilor carioase ale dinților</strong>. Cu cât
+            leziunea dintelui este descoperită mai devreme, cu atât şansele ca dintele sa rămână cât mai aproape de forma
+            iniţială sunt mai mari.</p>
+          <img src="photos/galerie-2.jpg" class="3">
+        </div>
+        <div class="schedule-benefits">
+    
+          <div class="container-title element-2">
+            <div class="odontologie-title">
+              <p class="hidden2"><Strong>Caria dentară distruge </Strong>ţesuturile dure ale dintelui constituind prin
+                complicaţiile sale, cea mai frecventă cauză de pierdere a dinţilor. Caria dentară este una dintre cele mai
+                des întâlnite afecţiuni ale dinţilor temporari şi permanenţi, fiind cauzată de alimentaţia necorespunzătoare
+                şi de igiena orală precară.</p>
+            </div>
+    
+          </div>
+        </div>
+        <div class="preturi-header">
+          <a href="#" class="toggleButton" id="arrowButton3" data-container="consultatieContainer3">
+    
+            Preturi
+            <img style="width: 20px; height: 20px; transition: transform 0.3s;" src="photos/arrow-right.png"
+              id="arrowIcon3">
+          </a>
+        </div>
+        <div class="consultatie preturi-align-row" id="consultatieContainer3">
+          <button class="suna-button appointment" data-target="contact-form-3">Programează-te</button>
+          <button class="suna-button"><a href="tel:9999-999-999">Suna acum</a></button>
+    
+          <div class="grid-2-5-consultatie ">
+            <h2>Coafaj indirect/direct</h2>
+            <h3>200<sup>RON</sup><span class="small"></span></h3>
+          </div>
+    
+          <div class="grid-2-5-consultatie ">
+            <h2>Îndepartarea obturaţiei vechi </h2>
+            <h3>100<sup>RON</sup><span class="small"></span></h3>
+          </div>
+          <div class="grid-2-5-consultatie ">
+            <h2>Obturaţie fotopolimerizabila mare (3 suprafata)</h2>
+            <h3>400<sup>RON</sup><span class="small"></span></h3>
+          </div>
+          <div class="grid-2-5-consultatie ">
+            <h2>Obturaţie fotopolimerizabila medie (2 suprafata) </h2>
+            <h3>300<sup>RON</sup><span class="small"></span></h3>
+          </div>
+          <div class="grid-2-5-consultatie ">
+            <h2>Obturaţie fotopolimerizabila mica (1 suprafata) </h2>
+            <h3>200<sup>RON</sup><span class="small"></span></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- pedodontie section -->
+    <div class="container-more-info" id="more-info-4">
+      <div class="container-parodontologie" id="more-info-4">
+        <div class="info-header">
+          <h3 class="line ">Pedodonție</h3>
+        </div>
+        <div id="consultatie" class="more-info-text-pics 2">
+          <p class="hidden2">Pedodonția, cunoscută și sub numele de stomatologie pediatrică sau odontopediatrie, este o
+            ramură specializată a stomatologiei care se concentrează pe îngrijirea și tratamentul sănătății orale a
+            copiilor, de la sugari până la adolescenți. Pedodontia se axează pe nevoile specifice ale copiilor și pe
+            abordări terapeutice adaptate vârstei și dezvoltării lor.</p>
+          <img src="photos/galerie-2.jpg" class="3">
+        </div>
+        <h1 class="page-title">Care sunt beneficiile acestui
+          tratament dentar?</h1>
+        <div class="sub-section-container2">
+          <div class="sub-section  sub-section-1">
+            <h2 class="sub-section-title ">Examinarea și diagnosticarea</h2>
+            <a href="albire-dentara.html">
+    
+            </a>
+            <div class="paragraph-area ">
+              <p> Pedodonții sunt specializați în evaluarea orală a copiilor, în identificarea problemelor dentare și în
+                diagnosticarea afecțiunilor specifice vârstei lor. Aceștia se concentrează pe identificarea cariilor
+                dentare, a bolilor gingivale, a malocluziilor și a altor afecțiuni orale. </p>
+            </div>
+    
+          </div>
+          <div class="sub-section sub-section-11">
+            <h2 class="sub-section-title ">Îngrijire preventivă </h2>
+            <a href="coroane-dentare.html">
+    
+            </a>
+            <div class="paragraph-area">
+              <p> Un aspect esențial al pedodonției este prevenirea problemelor dentare. Pedodonții promovează și educa
+                copiii și părinții cu privire la igiena orală corectă, alimentația sănătoasă, fluorizarea și alte măsuri
+                preventive pentru a evita apariția cariilor și a altor afecțiuni orale. </p>
+            </div>
+    
+          </div>
+          <div class="sub-section sub-section-8">
+            <h2 class="sub-section-title ">Tratamentul cariilor dentare</h2>
+            <a href="fatete-dentare.html">
+    
+            </a>
+            <div class="paragraph-area">
+              <p> Pedodonții se ocupă de tratarea cariilor dentare la copii. Aceștia utilizează tehnici și materiale
+                specifice pentru a trata și a restabili dinții afectați de carii, având în vedere faptul că copiii pot fi
+                anxioși sau au nevoi speciale de gestionare a anxietății în timpul procedurilor dentare. </p>
+            </div>
+    
+          </div>
+          <div class="sub-section sub-section-9">
+            <h2 class="sub-section-title ">Tratamentul ortodontic precoce </h2>
+            <a href="fatete-dentare.html">
+    
+            </a>
+            <div class="paragraph-area">
+              <p> Pedodonții pot evalua și gestiona problemele de aliniere a dinților și de dezvoltare a maxilarelor la
+                copii. Prin intervenția timpurie, pot recomanda tratamente ortodontice preventive sau corective pentru a
+                corecta și a ghida creșterea și dezvoltarea dentiției într-o manieră sănătoasă. </p>
+            </div>
+    
+          </div>
+          <div class="sub-section sub-section-10">
+            <h2 class="sub-section-title ">Educație și consiliere </h2>
+            <a href="fatete-dentare.html">
+    
+            </a>
+            <div class="paragraph-area">
+              <p> Pedodonții oferă educație și consiliere atât copiilor, cât și părinților, cu privire la igiena orală,
+                alimentație sănătoasă, obiceiuri orale nedorite (cum ar fi suptul degetului sau a suzetei), prevenția
+                traumelor dentare și alte aspecte legate de sănătatea orală a copiilor. </p>
+            </div>
+          </div>
+        </div>
+        <div id="parodontologie2" class="schedule-benefits">
+          <div class="container-title element-4">
+            <div id="parodontologie2" class="profilaxie-title">
+              <h2 class="hidden3">Cât valorează <strong style="color:rgb(253, 253, 253)">zâmbetul copilului tău?</strong>
+              </h2>
+            </div>
+            <div class="pedodontie-list">
+              <ol>
+                <li class="hidden2 child">Cei 20 de dinți de lapte apar până la vârsta de 3 ani și este foarte important să
+                  mențineți sănătatea lor. <strong>Cariile neglijate duc la probleme ce afectează permanent dezvoltarea
+                    dinților, astfel apare nevoia stomatologiei pentru copii.</strong></li>
+                <li class="hidden2 child">Copiii vor fi educaţi spre o igienă dentară corectă formându-şi obiceiuri
+                  sănătoase. Prin monitorizarea continuă a creşterii şi dezvoltării dinţilor, medicii noştri pot anticipa
+                  eventualele probleme dentare la copii, intervenind la timp pentru rezolvarea acestora. </li>
+                <li class="hidden2 child"><Strong> Sigilarea dentară este una dintre cele mai moderne metode de prevenție a
+                    cariilor dentare din sfera stomatologiei la copii.</Strong></li>
+              </ol>
+            </div>
+          </div>
+          <div class="container-title element-5">
+            <div id="parodontologie2" class="profilaxie-title">
+              <h2 class="hidden3">
+                Etapele de lucru pentru <strong style="color:rgb(253, 253, 253)">sigilarea dentară</strong>:
+              </h2>
+            </div>
+            <div class="pedodontie-list">
+              <ol>
+                <li class="hidden2 child">Curățarea suprafeței dintelui cu ajutorul unor periuțe rotative, neimplicând
+                  frezajul dintelui; </li>
+                <li class="hidden2 child">Gravarea dintelui (mordansare). Un gel cu consistență fluidă, în a cărui
+                  concentrație intră și acid fosforic, este aplicat prin pensulare, injectare sau cu ajutorul unui burete,
+                  fiind lăsat să acționeze 15-30s, după care spațiul de lucru este spălat și uscat. </li>
+                <li class="hidden2 child">Aplicarea sigilantului se realizează cu instrumente speciale cu vârfuri de unică
+                  folosință. Sigilantul trebuie să acopere toate santurile. Acesta se menține 10-15s pentru a permite
+                  penetrarea și săturarea smalțului mordansat în mod optim, după care se fotopolimerizeaza. </li>
+                <li class="hidden2 child">Adaptarea funcțională constă în refacerea morfologiei funcționale a suprafețelor
+                  sigilate, îndepărtându-se eventuale contacte identificate cu ajutorul hârtiei de articulație prin
+                  utilizarea pietrelor diamantate</li>
+                <li class="hidden2 child">Reevaluarea pacienților-dinții sigilați trebuie controlați periodic de către
+                  medic, ideal la fiecare 6 luni.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="preturi-header">
+          <a href="#" class="toggleButton" id="arrowButton4" data-container="consultatieContainer4">
+            Preturi
+            <img style="width: 20px; height: 20px; transition: transform 0.3s;" src="photos/arrow-right.png"
+              id="arrowIcon4">
+          </a>
+        </div>
+        <div class="consultatie preturi-align-row" id="consultatieContainer4">
+          <button class="suna-button appointment" data-target="contact-form-4">Programează-te</button>
+          <button class="suna-button"><a href="tel:9999-999-999">Suna acum</a></button>
+        
+          <div class="grid-2-5-consultatie ">
+            <h2>Coafaj indirect pe dinte temporar</h2>
+            <h3>100<sup>RON</sup><span class="small"></span></h3>
+          </div>
+          <div class="grid-2-5-consultatie ">
+            <h2>Obturaţie canal dinte temporar</h2>
+            <h3>200<sup>RON</sup><span class="small"></span></h3>
+          </div>
+          <div class="grid-2-5-consultatie ">
+            <h2>Obturaţie fotopolimerizabila pe dinte temporar</h2>
+            <h3>200<sup>RON</sup><span class="small"></span></h3>
+          </div>
+          <div class="grid-2-5-consultatie ">
+            <h2>Obturaţie cu glassionomer pe dinte temporar</h2>
+            <h3>200<sup>RON</sup><span class="small"></span></h3>
+          </div>
+          <div class="grid-2-5-consultatie ">
+            <h2>Sigilare pe dinte temporar</h2>
+            <h3>200<sup>RON</sup><span class="small"></span></h3>
+          </div>
+        
+          <div class="grid-2-5-consultatie ">
+            <h2>Drenaj per canal pe dinte temporar</h2>
+            <h3>200<sup>RON</sup><span class="small"></span></h3>
+          </div>
+          <div class="grid-2-5-consultatie ">
+            <h2>Detartraj cu ultrasunete şi periaj professional pentru dinţi temporari</h2>
+            <h3>200<sup>RON</sup><span class="small"></span></h3>
+        
+          </div>
+          <div class="grid-2-5-consultatie ">
+            <h2>Periaj profesional pentru dinţi temporari</h2>
+            <h3>150<sup>RON</sup><span class="small"></span></h3>
+          </div>
+          <div class="grid-2-5-consultatie ">
+            <h2>Fluorizare pentru dinţi temporari</h2>
+            <h3>200<sup>RON</sup><span class="small"></span></h3>
+          </div>
+          <div class="grid-2-5-consultatie ">
+            <h2>Extracţie dinte temporar</h2>
+            <h3>200<sup>RON</sup><span class="small"></span></h3>
+          </div>
+        
+        </div>
+        
+        </div>
+        </div>
+
+          <!-- profilaxie section -->
+<div class="container-more-info" id="more-info-5">
+  <div class="container-parodontologie" id="more-info-5">
+
+    <div class="info-header">
+      <h3 class="line">Profilaxie</h3>
+    </div>
+    <div id="profilaxie" class="more-info-text-pics 2">
+      <p>Profilaxia dentară este cea mai simplă și accesibilă metodă de tratament. Profilaxia constă dintr-un set de
+        proceduri care au ca scop prevenirea apariției cariei dentare și a bolii parodontale. Mai mult, profilaxia
+        previne și evoluția acestor afecțiuni odată ce ele au apărut.</p>
+
+    </div>
+    <h1 id="profilaxie" class="page-title"><strong>Profilaxia dentară </strong> include următoarele aspecte:</h1>
+
+    <div class="sub-section-container2">
+      <div class="sub-section sub-section-12">
+        <h2 class="sub-section-title ">Igienizarea profesională </h2>
+        <a href="albire-dentara.html">
+
+        </a>
+        <div class="paragraph-area ">
+          <p>Medicul dentist sau igienistul dentar realizează îndepărtarea eficientă a tartrului (pietrei dentare) și a
+            plăcii bacteriene de pe suprafețele dentare și din zona subgingivală. Această procedură, numită detartraj
+            sau detartraj subgingival, ajută la prevenirea inflamației gingivale și a bolilor parodontale. </p>
+        </div>
+
+      </div>
+      <div class="sub-section sub-section-13">
+        <h2 class="sub-section-title "> Periajul profesional </h2>
+        <a href="coroane-dentare.html">
+
+        </a>
+        <div class="paragraph-area">
+          <p>Medicul dentist sau igienistul dentar utilizează instrumente speciale și paste de profilaxie pentru a
+            curăța și poliza suprafețele dentare, îndepărtând petele și placa bacteriană reziduală. </p>
+        </div>
+
+      </div>
+      <div class="sub-section sub-section-14">
+        <h2 class="sub-section-title "> Sigilarea dinților </h2>
+        <a href="fatete-dentare.html">
+
+        </a>
+        <div class="paragraph-area">
+          <p>Se aplică un strat subțire de rășină plastică (sigiliu dentar) pe suprafețele de mestecare ale dinților
+            posteriori (molari și premolari) pentru a crea o barieră de protecție împotriva plăcii bacteriene și a
+            cariilor. </p>
+        </div>
+
+      </div>
+      <div class="sub-section sub-section-15">
+        <h2 class="sub-section-title ">Fluorizarea</h2>
+        <a href="fatete-dentare.html">
+
+        </a>
+        <div class="paragraph-area">
+          <p>Aplicarea de fluorid, sub formă de gel, spumă sau lichid, pe suprafețele dentare pentru a întări smalțul
+            dentar și a reduce riscul de carii. Fluorul ajută la remineralizarea smalțului și la prevenirea
+            demineralizării cauzate de acizii din placa bacteriană. </p>
+        </div>
+
+      </div>
+      <div class="sub-section sub-section-16">
+        <h2 class="sub-section-title">Educație și consiliere</h2>
+        <a href="fatete-dentare.html">
+
+        </a>
+        <div class="paragraph-area">
+          <p>Medicul dentist oferă pacienților informații și instrucțiuni cu privire la tehnici de igienă orală
+            adecvate, alimentație sănătoasă, utilizarea corectă a aței dentare și a altor instrumente de igienă orală,
+            precum și importanța vizitelor regulate la stomatolog.</p>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="pic-profilaxie">
+
+    </div>
+    <div id="profilaxie" class="">
+      <div id="profilaxie" class="schedule-benefits">
+
+
+        <div class="container-title title-5">
+          <div id="parodontologie2" class="profilaxie-title">
+            <h2 class="hidden3">Ești conștient că trebuie să
+              îți îngrijești dinții în fiecare zi
+              pentru a avea un zâmbet sănătos?</h2>
+          </div>
+          <div class="profilaxie-list">
+            <ul>
+              <p class="hidden2">Profilaxia dentară este cea mai simplă și accesibilă metodă de tratament. Profilaxia
+                constă dintr-un set de proceduri care au ca scop prevenirea apariției cariei dentare și a bolii
+                parodontale. Mai mult, profilaxia previne și evoluția acestor afecțiuni odată ce ele au apărut.</p>
+              <p class="hidden2">Profilaxia dentară are 2 roluri:</p>
+              <p class="hidden2">prevenirea apariției cariei dentare și a bolii parodontale</p>
+              <p class="hidden2">prevenirea evoluției cariei dentare și a bolii parodontale si a apariției
+                complicațiilor</p>
+            </ul>
+          </div>
+        </div>
+        <div class="container-title title-6">
+          <div id="parodontologie2" class="profilaxie-title">
+            <h2 class="hidden3">3 factori care influențează apariția
+              cariei dentare și a bolii parodontale:</h2>
+          </div>
+          <div id="profilaxie" class="profilaxie-list">
+            <ul>
+              <li class="hidden2"><strong>Microbii</strong></li>
+              <p>Este cel mai important factor, fiind reprezentat de microbii și bacteriile situate în placa dentară.
+              </p>
+              <li class="hidden2"><strong>Bacteriile</strong></li>
+              <p>Bacteriile din cavitatea bucală transformă zaharurile în acizi printr-un proces numit fermentație
+                acidă. Acizii vor distruge treptat smalțul și dentina cauzând apariția cariilor dentare. </p>
+              <li class="hidden2"><strong>Calitatea țesuturilor</strong></li>
+              <p>Cu cât smalțul și dentina sunt mai dure, cu atât scade probabilitatea apariției cariilor dentare.
+                Există metode de profilaxie care au ca scop creșterea durității smalțului dentar</p>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container-title title-7">
+          <div id="parodontologie2" class="profilaxie-title">
+            <h2 class="hidden3">
+              Metode de profilaxie recomandate:</strong>
+            </h2>
+          </div>
+          <div id="profilaxie-list2" class="profilaxie-list">
+            <ul>
+              <p class="hidden2">Igiena orală este cea mai importantă metodă de profilaxie. Placa dentară se acumulează
+                pe suprafața dinților după fiecare masă. Dacă nu este îndepărtată prin periaj activ, aceasta se va
+                calcifica transformându-se în tartru dentar. </p>
+              <p class="hidden2">Detartrajul reprezintă procesul de îndepărtare a tartrului și plăcii dentare folosind
+                instrumente de mână sau aparate specifice de detartraj sonice sau ultrasonice. </p>
+              <p class="hidden2">Periajul profesional are ca scop îndepărtarea plăcii dentare ce a mai rămas după
+                detartraj, precum și a diverselor pete sau colorații de pe suprafața dinților. Periajul profesional este
+                realizat de medicul dentist cu ajutorul instrumentelor mecanice.</p>
+              <p class="hidden2">Sigilarea șanțurilor și fosetelor preîntâmpină stagnarea microbilor și a plăcii
+                dentare.</p>
+              <p class="hidden2">Reducerea consumului de zaharuri și alimentele bogate în carbohidrați care sunt o sursă
+                foarte bună pentru bacteriile din placa dentară.</p>
+              <p class="hidden2">Fluorul este un mineral care ajută la întărirea smalțului, pe care îl face mai
+                rezistent la acțiunea cariilor.</p>
+              <p class="hidden2">Fumatul sau mestecatul tutunului și consumul de alcool influențează negativ sănătatea
+                orală. Fumatul favorizează decolorarea dinților și stimulează acumularea plăcii dentare. În cazul
+                fumătorilor, crește riscul apariției gingivitei, paradontozei și a cancerului oral.</p>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="preturi-header">
+      <a href="#" class="toggleButton" id="arrowButton5" data-container="consultatieContainer5">
+        Preturi
+        <img style="width: 20px; height: 20px; transition: transform 0.3s;" src="photos/arrow-right.png"
+          id="arrowIcon5">
+      </a>
+    </div>
+    <div class="consultatie preturi-align-row" id="consultatieContainer5">
+
+      <button class="suna-button appointment" data-target="contact-form-5">Programează-te</button>
+      <button class="suna-button"><a href="tel:9999-999-999">Suna acum</a></button>
+      <div class="grid-2-5-consultatie ">
+        <h2>Detartraj cu ultrasunete</h2>
+        <h3>250<sup>RON</sup><span class="small"></span></h3>
+      </div>
+      <div class="grid-2-5-consultatie ">
+        <h2>Air flow + Detartra + Periaj</h2>
+        <h3>350<sup>RON</sup><span class="small"></span></h3>
+      </div>
+      <div class="grid-2-5-consultatie ">
+        <h2>Periaj profesional</h2>
+        <h3>150<sup>RON</sup><span class="small"></span></h3>
+      </div>
+      <div class="grid-2-5-consultatie ">
+        <h2>Fluorizare</h2>
+        <h3>200<sup>RON</sup><span class="small"></span></h3>
+      </div>
+
+      <div class="grid-2-5-consultatie ">
+        <h2>Aplicare desensibilizant per dinte</h2>
+        <h3>100<sup>RON</sup><span class="small"></span></h3>
+      </div>
+      <div class="grid-2-5-consultatie ">
+        <h2>Albire cu lampa</h2>
+        <h3>900<sup>RON</sup><span class="small"></span></h3>
+      </div>
+      <div class="grid-2-5-consultatie ">
+        <h2>Albire si detartraj</h2>
+        <h3>1000<sup>RON</sup><span class="small"></span></h3>
+      </div>
+      <div class="grid-2-5-consultatie ">
+        <h2>AIR FLOW</h2>
+        <h3>200<sup>RON</sup><span class="small"></span></h3>
+      </div>
+
+    </div>
+  </div>
+</div>
+        <!-- protetica dentara section -->
+        <div class="container-more-info" id="more-info-6">
+          <div class="container-portetica" id="more-info-6">
+            <div class="info-header">
+              <h3 style="margin-top:1.5 vw;" class="line">Protetică Dentară</h3>
+            </div>
+            <div id="consultatie" class="more-info-text-pics 2">
+              <p>Protetica dentară înseamnă refacerea dinților prin lucrări fixe: fațete, coroane și punți dentare, precum și
+                prin lucrări mobile sau mobilizabile: proteze totale sau parțiale, proteze scheletate cu sisteme speciale,
+                proteze pe implanturi.</p>
+              <img src="photos/galerie-2.jpg" class="3">
+            </div>
+            <h1 class="page-title">Există 2 categorii principale de proteze dentare utilizate în protetica dentară:</h1>
+            <div class="sub-section-container3">
+              <div class="sub-section ">
+                <h2 class="sub-section-title ">Proteze dentare fixe </h2>
+                <a href="albire-dentara.html">
+        
+                </a>
+                <div id="protetica" class="paragraph-area">
+                  <p>Acestea sunt proteze care sunt fixate permanent în gură și nu pot fi îndepărtate de către pacient. Exemple
+                    includ coroanele dentare, punțile dentare și implanturile dentare cu coroane sau punți fixe. Aceste proteze
+                    sunt fabricate individual pentru fiecare pacient și sunt atașate de dinții naturali sau de implanturile
+                    dentare existente, oferind o soluție stabilă și durabilă. </p>
+                </div>
+        
+              </div>
+        
+              <div class="sub-section 3">
+                <h2 class="sub-section-title ">Proteze dentare mobile</h2>
+                <a href="fatete-dentare.html">
+        
+                </a>
+                <div id="protetica" class="paragraph-area">
+                  <p>Acestea sunt proteze care pot fi îndepărtate și reintroduse în gură de către pacient. Exemple includ
+                    protezele totale (protezele dentare complete) și protezele parțiale (protezele scheletate). Protezele totale
+                    înlocuiesc toți dinții dintr-o arcadă și sunt susținute de țesuturile orale și de forța de supt. Protezele
+                    parțiale sunt utilizate atunci când pacientul mai are dinți naturali sănătoși și pot fi atașate de acești
+                    dinți cu ajutorul unor cârlige sau altor elemente de fixare. </p>
+                </div>
+        
+              </div>
+        
+            </div>
+        
+            <div id="parodontologie2" class="schedule-benefits">
+        
+              <div class="container-title element-4">
+                <div id="parodontologie2" class="profilaxie-title">
+                  <h2 class="hidden3">Când se apelează la protetica dentară?</h2>
+                </div>
+                <div class="protetica-list">
+                  <p class="hidden2">Atunci când avem unul sau mai mulţi dinţi lipsă, punţile dentare (pe dinti naturali sau pe
+                    implanturi) sunt o modalitate
+                    foarte bună de a înlocui spaţiile goale. Dinţii existenţi sunt utilizaţi pentru a crea literalmente un “pod”
+                    pentru a
+                    proteza zona în care dintele lipseşte. Protetica dentară înseamnă refacerea dinților prin lucrări fixe:
+                    fațete, coroane
+                    și punți dentare, precum și prin lucrări mobile sau mobilizabile: proteze totale sau parțiale, proteze
+                    scheletate cu
+                    sisteme speciale, proteze pe implanturi.</p>
+        
+                </div>
+              </div>
+              <div class="container-title element-5">
+                <div id="parodontologie2" class="profilaxie-title">
+                  <h2 class="hidden3">Ce materiale folosim? </h2>
+                </div>
+                <div class="protetica-list">
+                  <p class="hidden2">Punţile dentare sunt realizate din ceramică sau zirconiu-ceramică. Zirconiul înlocuieşte cu
+                    succes metalul din coroanele
+                    metalo-ceramice şi astfel culoarea lucrărilor protetice este aproape identică cu cea naturală.</p>
+                  <p class="hidden2">Atunci când estetica dentară este prioritară, mai ales la dinţii frontali cu distrucţii
+                    majore, o coroană ceramică pe
+                    zirconiu este răspunsul pe care clinica noastră îl oferă. Zirconiul dentar este răspunsul şi pentru
+                    pacienţii care
+                    dezvoltă alergii la metale.</p>
+                </div>
+              </div>
+              <div class="container-title element-6">
+                <div id="parodontologie2" class="profilaxie-title">
+                  <h2 class="hidden3">Care sunt consecințele netratării la timp a cariilor? </h2>
+                </div>
+                <div class="protetica-list">
+                  <p class="hidden2">Cariile netratate avansează ducând la pierderi însemnate de substanţă dură dentară
+                    nemaifăcând posibilă refacerea
+                    dintelui printr-o simplă plombă. Se poate pierde chiar şi dintele apărând astfel o edentaţie ce poate duce
+                    la
+                    ineficienţă masticatorie, migrări ale dinţilor vecini şi antagonişti, tulburări de ocluzie, probleme
+                    parodontale şi nu
+                    în ultimul rând o estetică deficitară.</p>
+                  <p class="hidden2">Dinţii artificiali sunt confecţionaţi din material ceramic care poate reda forma şi
+                    culoarea dinţilor naturali
+                    păstrându-şi în timp aceste calităţi. Ceramica se realizează pe un suport de oxid de zirconiu pentru a-i
+                    mări
+                    rezistenţa.</p>
+                </div>
+              </div>
+        
+            </div>
+            <div class="preturi-header">
+              <a href="#" class="toggleButton" id="arrowButton6" data-container="consultatieContainer6">
+        
+                Preturi
+                <img style="width: 20px; height: 20px; transition: transform 0.3s;" src="photos/arrow-right.png"
+                  id="arrowIcon6">
+              </a>
+            </div>
+            <div class="consultatie preturi-align-row" id="consultatieContainer6">
+        
+              <button class="suna-button appointment" data-target="contact-form-6">Programează-te</button>
+              <button class="suna-button"><a href="tel:9999-999-999">Suna acum</a></button>
+              <div class="grid-2-5-consultatie ">
+                <h2>Coafaj indirect/direct</h2>
+                <h3>200<sup>RON</sup><span class="small"></span></h3>
+              </div>
+        
+              <div class="grid-2-5-consultatie  ">
+                <h2>Îndepartarea obturaţiei vechi </h2>
+                <h3>100<sup>RON</sup><span class="small"></span></h3>
+              </div>
+        
+              <div class="grid-2-5-consultatie ">
+                <h2>Obturaţie fotopolimerizabila mare (3 suprafata)</h2>
+                <h3>400<sup>RON</sup><span class="small"></span></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- parodontologie section -->
+        <div class="container-more-info" id="more-info-7">
+          <div class="container-parodontologie" id="more-info-7">
+            <div class="info-header">
+              <h3 class="line">Parodontologie</h3>
+            </div>
+            <div id="consultatie" class="more-info-text-pics 2">
+              <p>Este acea specialitate a medicinei dentare care se ocupă cu studiul întregului sistem ce menține dinții în
+                oasele
+                maxilare, acest sistem fiind numit parodonțiu sau spațiu periodontal. Parodontologia studiază anatomia,
+                fiziologia
+                parodonțiului marginal, precum și bolile care îl afectează și posibilitățile de tratament.</p>
+              <img src="photos/galerie-2.jpg" class="3">
+            </div>
+            <h1 class="page-title">Boala parodontală se poate prezenta sub 3 forme:</h1>
+            <div class="sub-section-container3">
+              <div class="sub-section ">
+                <h2 class="sub-section-title ">Gingivită</h2>
+                <a href="albire-dentara.html">
+        
+                </a>
+                <div class="paragraph-area ">
+                  <p>placa bacteriană irită gingiile, făcându-le sensibile și sângerânde. Această fază este încă reversibila.
+                  </p>
+                </div>
+        
+              </div>
+              <div class="sub-section 2">
+                <h2 class="sub-section-title ">Parodontită avansată</h2>
+                <a href="coroane-dentare.html">
+        
+                </a>
+                <div class="paragraph-area">
+                  <p>dacă nu este îndepărtată, placa microbiana se transformă în tartru. Continuând să crească, aceasta împinge
+                    inserția
+                    gingivală spre rădăcină sau o îndepărtează de dinte. Astfel se formează pungi între dinte și gingie. </p>
+                </div>
+        
+              </div>
+              <div class="sub-section 3">
+                <h2 class="sub-section-title ">Parodontită avansată</h2>
+                <a href="fatete-dentare.html">
+        
+                </a>
+                <div class="paragraph-area">
+                  <p>boala continuă să avanseze, distrugând mai mult os și ligament parodontal. Chiar și dinții cei sănătoși,
+                    pot deveni
+                    mobili, câteodată trebuind extrași.</p>
+                </div>
+        
+              </div>
+            </div>
+          </div>
+          <div id="parodontologie" class="schedule-benefits">
+        
+            <div class="container-title element-4">
+              <div id="parodontologie2" class="profilaxie-title">
+                <h2 class="hidden3">Semnele ce pot indica o formă a parodontozei sunt:</h2>
+              </div>
+              <div class="ortodontie-list">
+                <ul class="hidden2">
+                  <li>respirație urât mirositoare;</li>
+                  <li>sângerare gingivală spontană sau la periajul dinților;</li>
+                  <li>gingii umflate și roșii;</li>
+                  <li>sensibilitate dentară;</li>
+                  <li>mobilitate dentară;</li>
+                  <li>retracții gingivale cu expunerea rădăcinilor dinților.</li>
+                </ul>
+        
+              </div>
+            </div>
+            <div class="container-title element-5">
+              <div id="parodontologie2" class="profilaxie-title">
+                <h2 class="hidden3">5 obiceiuri care duc la parodontoză: </h2>
+              </div>
+              <div class="parodontologie-list">
+                <ul class="hidden2">
+                  <li>igienă orală deficitară</li>
+                  <li>fumatul</li>
+                  <li>alimentaţia bogată în săruri minerale şi săracă în fructe</li>
+                  <li>folosirea de “metode alternative” pentru diminuarea efectelor gingivitei</li>
+                  <li>carii netratate.</li>
+                </ul>
+        
+              </div>
+            </div>
+            <div class="container-title element-7">
+              <div id="parodontologie2" class="profilaxie-title">
+                <h2 class="hidden3">La prima consultație dentară vom:</h2>
+              </div>
+              <div class="ortodontie-list">
+                <ul class="hidden2">
+                  <li>Realiza un istoric medical pentru a identifica factorii de risc ai parodontozei (fumatul, diabetul
+                    zaharat, etc.);</li>
+                  <li>Examina gingiile și va consemna gradul de inflamație;</li>
+                  <li>Măsura adâncimea pungilor parodontale cu ajutorul unei sonde parodontale gradate.</li>
+                </ul>
+                <p class="hidden2">Pe lângă examenul clinic, vom avea nevoie de o radiografie panoramică pentru a analiza
+                  eventuala pierdere osoasă,
+                  întrucât boala parodontală afectează implicit osul. Vom preciza gradul de severitate al parodontozei și
+                  posibilitățile
+                  de tratament. Împreună cu tine o vom alege pe cea mai potrivită, în final realizând un plan de tratament
+                  structurat pe
+                  etape succesive.</p>
+                <p class="hidden2">Chiureta parodontală este cea mai bună alegere pentru zonele subgingivale care prezintă
+                  acumulări de tartru. Mulţumită
+                  efectului antibacterian, decontaminarea pungilor parodontale are loc rapid şi corect, producând o reducere
+                  semnificativă
+                  a bacteriilor şi evitând o recuperare lungă şi inconfortabilă.</p>
+                <p class="hidden2">Folosind proprietăţile anestezice şi biostimulative naturale ale laserului, pacienţii noştri
+                  vor avea disconfortul
+                  postoperator redus la minim.</p>
+              </div>
+            </div>
+            <div class="container-title element-8">
+              <div id="parodontologie2" class="profilaxie-title">
+                <h2 class="hidden3">Rezultatele obținute în urma tratamentului pentru parodontoză se mențin în timp?</h2>
+              </div>
+              <div class="ortodontie-list">
+                <ul class="hidden2">
+                  <li>Dacă vei avea grijă de igiena dentară rezultatele pot fi menținute ani de zile</li>
+                  <li>Încredere în sine</li>
+                  <li>O viață normală.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="preturi-header">
+            <a href="#" class="toggleButton" id="arrowButton7" data-container="consultatieContainer7">
+        
+              Preturi
+              <img style="width: 20px; height: 20px; transition: transform 0.3s;" src="photos/arrow-right.png" id="arrowIcon7">
+            </a>
+          </div>
+          <div class="consultatie preturi-align-row" id="consultatieContainer7">
+        
+            <button class="suna-button appointment" data-target="contact-form-7">Programează-te</button>
+            <button class="suna-button"><a href="tel:9999-999-999">Suna acum</a></button>
+        
+        
+            <div class="grid-2-5-consultatie ">
+              <h2>Coafaj indirect/direct</h2>
+              <h3>200<sup>RON</sup><span class="small"></span></h3>
+            </div>
+        
+        
+            <div class="grid-2-5-consultatie ">
+              <h2>Îndepӑrtarea obturaţiei vechi </h2>
+              <h3>100<sup>RON</sup><span class="small"></span></h3>
+            </div>
+        
+            <div class="grid-2-5-consultatie ">
+              <h2>Obturaţie fotopolimerizabilӑ mare (3 suprafata)</h2>
+              <h3>400<sup>RON</sup><span class="small"></span></h3>
+            </div>
+        
+          </div>
+        
+        </div>
+        <div class="container-more-info" id="more-info-8">
+          <div class="container-parodontologie" id="more-info-8">
+            <div class="info-header">
+              <h3 class="line">Ortodonţie</h3>
+            </div>
+            <div id="consultatie" class="more-info-text-pics 2">
+              <p>Ortodonţia este o specializare a medicinei dentare care se ocupă de corectarea anomaliilor dentomaxilare.
+                Ortodonția
+                este specialitatea care se ocupă cu îndreptarea poziției dinților, reglarea ocluziei (mușcăturii) și a
+                rapoartelor
+                dintre cele două maxilare.</p>
+              <img src="photos/galerie-2.jpg" class="3">
+            </div>
+            <h1 class="page-title">Candidatul ideal pentru tratament ortodontic:</h1>
+            <div class="sub-section-container3">
+              <div class="sub-section ">
+                <h2 class="sub-section-title ">Îmbunătățirea aspectului estetic</h2>
+                <a href="albire-dentara.html">
+        
+                </a>
+                <div class="paragraph-area ">
+                  Ortodonția poate corecta problemele de aliniere dentară, precum dinți înghesuiți, în poziții incorecte sau
+                  spații
+                  excesive între dinți. Prin alinierea corectă a dinților, ortodonția contribuie la obținerea unui zâmbet frumos
+                  și
+                  armonios.</p>
+                </div>
+        
+              </div>
+              <div class="sub-section 2">
+                <h2 class="sub-section-title ">Îmbunătățirea sănătății orale</h2>
+                <a href="coroane-dentare.html">
+        
+                </a>
+                <div class="paragraph-area">
+                  <p>Dentiția corect aliniată este mai ușor de curățat, permițând o igienă orală eficientă. Îndepărtarea plăcii
+                    bacteriene și
+                    prevenirea acumulării tartrului devin mai ușoare, ceea ce reduce riscul de carii dentare, afecțiuni
+                    gingivale și alte
+                    probleme dentare.</p>
+                </div>
+        
+              </div>
+              <div class="sub-section 3">
+                <h2 class="sub-section-title ">Ameliorarea vorbirii</h2>
+                <a href="fatete-dentare.html">
+        
+                </a>
+                <div class="paragraph-area">
+                  <p>Anumite probleme de aliniere dentară pot afecta pronunția corectă a sunetelor. Prin corectarea acestor
+                    probleme,
+                    ortodonția poate contribui la ameliorarea vorbirii și la o comunicare mai clară.</p>
+                </div>
+        
+              </div>
+              <div class="sub-section 3">
+                <h2 class="sub-section-title ">Creșterea încrederii și a stimei de sine</h2>
+                <a href="fatete-dentare.html">
+        
+                </a>
+                <div class="paragraph-area">
+                  <p>Un zâmbet frumos și o dantură corect aliniată pot îmbunătăți încrederea în sine și stima de sine. Mulți
+                    pacienți care au
+                    urmat tratament ortodontic afirmă că se simt mai confortabil și mai încrezători în relațiile interpersonale
+                    și în
+                    aparițiile sociale.</p>
+                </div>
+        
+              </div>
+        
+            </div>
+          </div>
+          <div id="parodontologie" class="schedule-benefits">
+        
+            <div class="container-title element-4">
+              <div id="parodontologie2" class="profilaxie-title">
+                <h2 class="hidden3">Cum aflu dacă am nevoie de tratament ortodontic? </h2>
+              </div>
+              <div class="profilaxie-list">
+                <p class="hidden2">Numai medicul dentist sau ortodont poate determina dacă aveţi nevoie de un tratament
+                  ortodontic. Pe baza unor
+                  instrumente de diagnostic care includ anamneza medicală şi dentară completă, un examen clinic, mulajul
+                  danturii şi
+                  radiografii şi fotografii speciale, medicul dentist sau ortodont decide dacă se recomandă tratamentul
+                  ortodontic şi
+                  elaborează un plan de tratament individual.</p>
+                <p class="hidden2"><strong>Cauze</strong>: ereditatea, diferite sindroame, obiceiuri vicioase ca suptul
+                  degetului, a limbii, a buzei sau a altor obiecte.</p>
+        
+              </div>
+            </div>
+            <div class="container-title element-5">
+              <div id="parodontologie2" class="profilaxie-title">
+                <h2 class="hidden3">Candidatul ideal pentru tratament ortodontic:</h2>
+              </div>
+              <div class="ortodontie-list">
+                <ul class="hidden2">
+                  <li class="3">Supraocluzie verticală (overbite) – când dinţii frontali superiori ies cu mult în faţa celor
+                    inferiori</li>
+                  <li class="3">Ocluzia inversă (underbite) – un aspect de buldog, când dinţii frontali inferiori sunt ieşiţi
+                    mult în faţă, sau cei
+                    superiori sunt retraşi mult în spate</li>
+                  <li class="3">Ocluzie încrucişată – când dinţii superiori nu se potrivesc în faţă peste cei inferiori, la o
+                    muşcătură normală</li>
+                  <li class="3">Ocluzie deschisă – formarea unui spaţiu între suprafeţele ocluzale ale dinţilor frontali şi/sau
+                    laterali, atunci când
+                    muşcaţi pe dinţii posteriori</li>
+                  <li class="3">Malocluzie pe linia mediană – când centrul dinţilor frontali superiori nu se aliniază cu centrul
+                    dinţilor frontali
+                    inferiori</li>
+                  <li>Dinţi distanţiali – spaţii interdentare sau „breşe edentate”, rezultat al lipsei dinţilor sau al dinţilor
+                    care nu umplu
+                    toată arcada</li>
+                  <li>Înghesuire dentară – când există prea mulţi dinţi pentru a avea loc pe arcada dentară</li>
+                </ul>
+              </div>
+            </div>
+            <div class="container-title element-7">
+              <div id="parodontologie2" class="profilaxie-title">
+                <h2 class="hidden3">Ce presupune o consultaţie endodontică de specialitate?</h2>
+              </div>
+              <div class="profilaxie-list">
+                <p class="hidden2">Prima întâlnire cu medicul endodont este rezervată pentru examinare, evaluare, diagnostic şi
+                  stabilirea planului de
+                  tratament. Sunt examinate radiografii recente din mai multe angulaţii ale dintelui/dinţilor cu afecţiuni
+                  endodontice.</p>
+                <p class="hidden2">Examenul clinic intraoral este efectuat cu ajutorul microscopului operator. Mărirea şi lumina
+                  puternică oferite de
+                  acesta fac posibilă detectarea precoce a unor elemente de micropatologie (de exemplu fisuri), care,
+                  neidentificate, ar
+                  duce ulterior la eşecul tratamentului. Totodată, cu ajutorul sistemului video, ataşat microscopului operator,
+                  se fac
+                  fotografii digitale ale zonelor de interes, uşurând astfel înţelegerea de către pacient a situaţiei clinice
+                  iniţiale.
+                  Tot în cadrul examenului clinic, dinţii sunt supuşi unor teste specifice (cald, rece, percuţie, muşcătură).
+                </p>
+                <p class="hidden2">Prin acestea se încearcă reproducerea simptomelor pacientului şi identificarea
+                  dintelui/dinţilor cu probleme
+                  endodontice.</p>
+        
+              </div>
+            </div>
+        
+          </div>
+          <div class="preturi-header">
+            <a href="#" class="toggleButton" id="arrowButton8" data-container="consultatieContainer8">
+        
+              Preturi
+              <img style="width: 20px; height: 20px; transition: transform 0.3s;" src="photos/arrow-right.png" id="arrowIcon8">
+            </a>
+          </div>
+          <div class="consultatie preturi-align-row" id="consultatieContainer8">
+        
+            <button class="suna-button appointment" data-target="contact-form-8">Programează-te</button>
+            <button class="suna-button"><a href="tel:9999-999-999">Suna acum</a></button>
+        
+            <div class="grid-2-5-consultatie ">
+              <h2>Consultaţie</h2>
+              <h3>200<sup>RON</sup><span class="small"></span></h3>
+            </div>
+        
+        
+            <div class="grid-2-5-consultatie ">
+              <h2>Plan de tratament</h2>
+              <h3>200<sup>RON</sup><span class="small"></span></h3>
+            </div>
+        
+        
+            <div class="grid-2-5-consultatie ">
+              <h2>Control aparat mobil/arcada</h2>
+              <h3>150<sup>RON</sup><span class="small"></span></h3>
+            </div>
+            <div class="grid-2-5-consultatie ">
+              <h2>Aplicare aparat ortodontic fix safir (per arcada)</h2>
+              <h3>3500<sup>RON</sup><span class="small"></span></h3>
+            </div>
+            <div class="grid-2-5-consultatie ">
+              <h2>Aplicare aparat ortodontic fix metalic (per arcada)</h2>
+              <h3>2500<sup>RON</sup><span class="small"></span></h3>
+            </div>
+            <div class="grid-2-5-consultatie ">
+              <h2>Bracket nou (ceramic)</h2>
+              <h3>200<sup>RON</sup><span class="small"></span></h3>
+            </div>
+            <div class="grid-2-5-consultatie ">
+              <h2>Bracket nou (metalic)</h2>
+              <h3>150<sup>RON</sup><span class="small"></span></h3>
+            </div>
+            <div class="grid-2-5-consultatie ">
+              <h2>Inel nou</h2>
+              <h3>200<sup>RON</sup><span class="small"></span></h3>
+            </div>
+            <div class="grid-2-5-consultatie ">
+              <h2>Arc nou</h2>
+              <h3>200<sup>RON</sup><span class="small"></span></h3>
+            </div>
+            <div class="grid-2-5-consultatie ">
+              <h2>Aparat ortodontic mobil (per arcada)</h2>
+              <h3>1500<sup>RON</sup><span class="small"></span></h3>
+            </div>
+            <div class="grid-2-5-consultatie ">
+              <h2>Activator</h2>
+              <h3>2000<sup>RON</sup><span class="small"></span></h3>
+            </div>
+            <div class="grid-2-5-consultatie ">
+              <h2>Disjunctor</h2>
+              <h3>2000<sup>RON</sup><span class="small"></span></h3>
+            </div>
+            <div class="grid-2-5-consultatie ">
+              <h2>Aparat contenţie mobil (per arcada)</h2>
+              <h3>750<sup>RON</sup><span class="small"></span></h3>
+            </div>
+            <div class="grid-2-5-consultatie ">
+              <h2>Retainer colat (per arcada)</h2>
+              <h3>750<sup>RON</sup><span class="small"></span></h3>
+            </div>
+            <div class="grid-2-5-consultatie ">
+              <h2>Monobloc contentie</h2>
+              <h3>150<sup>RON</sup><span class="small"></span></h3>
+            </div>
+          </div>
+        </div>
+
+          <!-- endodontie section -->
+            <div class="container-more-info" id="more-info-9">
+              <div class="container-parodontologie" id="more-info-9">
+                <div class="info-header">
+                  <h3 class="line">Endodonție</h3>
+                </div>
+                <div id="consultatie" class="more-info-text-pics 2">
+                  <p>Edodonția se ocupă cu tratamentul afecțiunilor din interiorul dintelui, mai exact cu afecțiunile pulpei, cu
+                    prevenirea,
+                    diagnosticarea și tratamentul patologiei pulpare.</p>
+                  <img src="photos/galerie-2.jpg" class="3">
+                </div>
+                <h1 class="page-title">Care sunt beneficiile acestui
+                  tratament dentar?</h1>
+                <div class="sub-section-container3">
+                  <div class="sub-section ">
+                    <h2 class="sub-section-title ">Salvarea dinților</h2>
+                    <a href="albire-dentara.html">
+            
+                    </a>
+                    <div class="paragraph-area ">
+                      Endodonția este utilizată pentru a salva dinții care altfel ar trebui să fie extrasați. În urma tratamentului
+                      endodontic, pacienții pot păstra dinții naturali, evitând astfel costurile și disconfortul asociate cu
+                      extracția și
+                      înlocuirea dintelui pierdut.</p>
+                    </div>
+            
+                  </div>
+                  <div class="sub-section 2">
+                    <h2 class="sub-section-title ">Eliminarea infecțiilor</h2>
+                    <a href="coroane-dentare.html">
+            
+                    </a>
+                    <div class="paragraph-area">
+                      <p>Endodonția poate elimina infecțiile din canalele radiculare ale dinților, prevenind astfel răspândirea
+                        bacteriilor în
+                        întregul organism și reducând riscul de complicații, cum ar fi abcesele dentare și septicemia.</p>
+                    </div>
+            
+                  </div>
+                  <div class="sub-section 3">
+                    <h2 class="sub-section-title ">Restaurarea funcției dentare</h2>
+                    <a href="fatete-dentare.html">
+            
+                    </a>
+                    <div class="paragraph-area">
+                      <p>După tratamentul endodontic, dinții pot fi restaurați pentru a restabili funcția și aspectul acestora,
+                        astfel încât
+                        pacienții să poată mânca și vorbi fără probleme și să se simtă mai încrezători în propriul zâmbet.</p>
+                    </div>
+            
+                  </div>
+                  <div class="sub-section 3">
+                    <h2 class="sub-section-title ">Implantologie dentară</h2>
+                    <a href="fatete-dentare.html">
+            
+                    </a>
+                    <div class="paragraph-area">
+                      <p>Inserarea implanturilor dentare în osul maxilarului sau al mandibulei pentru înlocuirea dinților lipsă și
+                        restaurarea
+                        funcției dentare.</p>
+                    </div>
+            
+                  </div>
+            
+                </div>
+              </div>
+              <div id="parodontologie" class="schedule-benefits">
+            
+                <div class="container-title element-4">
+                  <div id="parodontologie2" class="profilaxie-title">
+                    <h2 class="hidden3">Ce este pulpa dentară?</h2>
+                  </div>
+                  <div class="ortodontie-list">
+                    <p class="hidden2">Este un țesut situat în interiorul dintelui și este compusă din nervi, vase de sânge și alte
+                      țesuturi.</p>
+                    <p class="hidden2"><strong>În funcție de poziție, este împărțită în 2 zone:</strong></p>
+                    <ul class="hidden2">
+                      <li><strong>Pulpa coronară</strong> – Este situată în coroana dentară, sub dentină, într-un spațiu închis, cu
+                        pereți duri, numit camera
+                        pulpară.</li>
+                      <li><strong>Pulpa radiculară </strong>– Este situată la nivelul rădăcinilor, într-un spațiu îngust, alungit,
+                        numit canal radicular. În
+                        funcție de dinte, fiecare rădăcină poate avea unul sau mai multe canale radiculare.</li>
+                    </ul>
+            
+                  </div>
+                </div>
+                <div class="container-title element-5">
+                  <div id="parodontologie2" class="profilaxie-title">
+                    <h2 class="hidden3">Ce presupune o consultaţie endodonticăde specialitate?</h2>
+                  </div>
+                  <div class="profilaxie-list">
+                    <p class="hidden2">Prima întâlnire cu medicul endodont este rezervată pentru examinare, evaluare, diagnostic şi
+                      stabilirea planului de
+                      tratament. Sunt examinate radiografii recente din mai multe angulaţii ale dintelui/dinţilor cu afecţiuni
+                      endodontice.</p>
+                    <p class="hidden2">Examenul clinic intraoral este efectuat cu ajutorul microscopului operator. Mărirea şi lumina
+                      puternică oferite de
+                      acesta fac posibilă detectarea precoce a unor elemente de micropatologie (de exemplu fisuri), care,
+                      neidentificate, ar
+                      duce ulterior la eşecul tratamentului. Totodată, cu ajutorul sistemului video, ataşat microscopului operator,
+                      se fac
+                      fotografii digitale ale zonelor de interes, uşurând astfel înţelegerea de către pacient a situaţiei clinice
+                      iniţiale.
+                      Tot în cadrul examenului clinic, dinţii sunt supuşi unor teste specifice (cald, rece, percuţie, muşcătură).
+                    </p>
+                    <p class="hidden2">Prin acestea se încearcă reproducerea simptomelor pacientului şi identificarea
+                      dintelui/dinţilor cu probleme
+                      endodontice.</p>
+                  </div>
+                </div>
+            
+            
+              </div>
+              <div class="preturi-header">
+                <a href="#" class="toggleButton" id="arrowButton9" data-container="consultatieContainer9">
+            
+                  Preturi
+                  <img style="width: 20px; height: 20px; transition: transform 0.3s;" src="photos/arrow-right.png" id="arrowIcon9">
+                </a>
+              </div>
+              <div class="consultatie preturi-align-row" id="consultatieContainer9">
+            
+                <button class="suna-button appointment" data-target="contact-form-9">Programează-te</button>
+                <button class="suna-button"><a href="tel:9999-999-999">Suna acum</a></button>
+            
+                <div class="grid-2-5-consultatie ">
+                  <h2>Consultaţie</h2>
+                  <h3>200<sup>RON</sup><span class="small"></span></h3>
+                </div>
+            
+            
+                <div class="grid-2-5-consultatie ">
+                  <h2>Plan de tratament</h2>
+                  <h3>200<sup>RON</sup><span class="small"></span></h3>
+                </div>
+            
+            
+                <div class="grid-2-5-consultatie ">
+                  <h2>Izolare diga</h2>
+                  <h3>100<sup>RON</sup><span class="small"></span></h3>
+                </div>
+                <div class="grid-2-5-consultatie ">
+                  <h2>Extirpare vitalӑ cu obturaţie de canal monoradiculari</h2>
+                  <h3>400<sup>RON</sup><span class="small"></span></h3>
+                </div>
+                <div class="grid-2-5-consultatie ">
+                  <h2>Extirpare vitalӑ cu obturaţie de canal biradiculari</h2>
+                  <h3>600<sup>RON</sup><span class="small"></span></h3>
+                </div>
+                <div class="grid-2-5-consultatie ">
+                  <h2>Extirpare vitalӑ cu obturaţie de canal pluriradiculari</h2>
+                  <h3>900<sup>RON</sup><span class="small"></span></h3>
+                </div>
+                <div class="grid-2-5-consultatie ">
+                  <h2>Retratament monoradiculari</h2>
+                  <h3>500-700<sup>RON</sup><span class="small"></span></h3>
+                </div>
+                <div class="grid-2-5-consultatie ">
+                  <h2>Retratament pluriradiculari</h2>
+                  <h3>700-1400<sup>RON</sup><span class="small"></span></h3>
+                </div>
+                <div class="grid-2-5-consultatie ">
+                  <h2>Pansament provizoriu</h2>
+                  <h3>150<sup>RON</sup><span class="small"></span></h3>
+                </div>
+                <div class="grid-2-5-consultatie ">
+                  <h2>Hidroxid de calciu endocanalicular</h2>
+                  <h3>150<sup>RON</sup><span class="small"></span></h3>
+                </div>
+                <div class="grid-2-5-consultatie ">
+                  <h2>Tratament mecanic de canal urgenta</h2>
+                  <h3>200<sup>RON</sup><span class="small"></span></h3>
+                </div>
+                <div class="grid-2-5-consultatie ">
+                  <h2>Indepartare RCR</h2>
+                  <h3>250<sup>RON</sup><span class="small"></span></h3>
+                </div>
+                <div class="grid-2-5-consultatie ">
+                  <h2>Indepartare pivot fibra de sticla</h2>
+                  <h3>250<sup>RON</sup><span class="small"></span></h3>
+                </div>
+                <div class="grid-2-5-consultatie ">
+                  <h2>Inchidere perforatiii MTA</h2>
+                  <h3>600<sup>RON</sup><span class="small"></span></h3>
+                </div>
+                <div class="grid-2-5-consultatie ">
+                  <h2>Indepartare ace rupte(per canal)</h2>
+                  <h3>300-600<sup>RON</sup><span class="small"></span></h3>
+                </div>
+              </div>
+            
+            </div>
+            </div>
+
+              <!-- contact-section -->
+      <section class="contact-section" id="contact1">
+      
+        <div class="form">
+      
+          <div class="form-1">
+      
+            <div class="input-wrapper hidden2">
+              <input type="text" id="name1" required name="name1" placeholder=" " />
+              <span>Nume</span>
+              <div class="notification-bubble" id="name1-bubble"></div>
+            </div>
+            <div class="input-wrapper hidden2">
+              <input type="text" id="phone_number1" name="phone_number1" required placeholder=" " />
+              <span>Numar de telefon</span>
+              <div class="notification-bubble" id="phone_number1-bubble"></div>
+            </div>
+            <div class="input-wrapper hidden2">
+              <input type="text" id="email1" name="email1" required placeholder=" " />
+              <span>E-mail</span>
+              <div class="notification-bubble" id="email1-bubble"></div>
+            </div>
+            <div class="input-wrapper-long hidden2">
+              <input type="text" id="message1" name="message1" required placeholder=" " />
+              <span>Detalii</span>
+              <div class="notification-bubble" id="message1-bubble"></div>
+            </div>
+            <div class="input-wrapper hidden2">
+              <span class="span2">Alege cum vrei sa fi contactat</span>
+              <div class="contact-methods">
+                <div class="radio-container">
+                  <input type="radio" id="optWhatsApp1" name="contactMethod" autocomplete="off" value="WhatsApp" required />
+                  <label for="optWhatsApp1">WhatsApp</label>
+                </div>
+                <div class="radio-container">
+                  <input type="radio" id="optApel1" name="contactMethod" autocomplete="off" value="Apel" required />
+                  <label for="optApel1"> Apel</label>
+                </div>
+                <div class="radio-container">
+                  <input type="radio" id="optMail1" name="contactMethod" autocomplete="off" value="Mail" required />
+                  <label for="optMail1"> Mail</label>
+                </div>
+              </div>
+              <div class="notification-bubble" id="contactMethod-bubble"></div>
+            </div>
+                <!-- emailjs button send -->
+            <div class="buton-form">
+              <button class="bubble-button2 hidden3" onclick="sendMail()">Trimite<img class="hidden3"
+                  src="photos/send-logo.png" style="margin-top:-2.5px;width:22px;height:25px;"></button>
+      
+      
+            </div>
+            <div class="success-message" id="success-message" style="display: none;"></div>
+            <div class="error-message" id="error-message" style="display: none;"></div>
+      
+          </div>
+          <div class="form-2">
+            <div class="info-header">
+              <h2>Te așteptăm cu zâmbetul pe buze</h2>
+              <p>Exact cum vei pleca si tu!</p>
+            </div>
+            <div class="info-programare">
+              <div class="programare-0">
+      
+                <h3><img src="photos/telefon-info.png" style="width: 35px;height: 35px;margin-right:1.5px;">Telefon</h3>
+                <p> 0799.399.599</p>
+      
+              </div>
+              <div class="programare-1">
+      
+                <h3><img src="photos/mail-info.png" style="width: 35px;height: 35px;margin-right:1.5px;">Email</h3>
+                <p> ancaralucasmyle@contact.com</p>
+              </div>
+      
+              <div class="programare-2">
+      
+                <h3><img src="photos/locatie-info.png" style="width: 35px;height: 35px;margin-right:1.5px;">Adresa</h3>
+                <a target="_blank"
+                  href="https://www.google.com/maps/dir//Strada+Sergent+Ion+Iriceanu+20-22,+Bucure%C8%99ti/@44.3800223,26.0524668,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x40b1fe0b7b02088d:0x4f125562497c7268!2m2!1d26.1348675!2d44.3800519?entry=ttu">
+                  <p>Strada Sergent Ion Iriceanu 20-22</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+                
+      <!-- site footer -->
+  <footer class="site-footer">
+    <div class="container-footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h4>Tratamente</h4>
+          <ul>
+            <li><a id="procedure-card-button" class="price-slide3" data-target="more-info-1">Consultatie</a></li>
+            <li><a id="procedure-card-button" class="price-slide3 " data-target="more-info-2">Chirurgie</a></li>
+            <li><a id="procedure-card-button" class="price-slide3 " data-target="more-info-3">Odontologie</a></li>
+            <li><a id="procedure-card-button" class="price-slide3 " data-target="more-info-4">Pedodonție</a></li>
+            <li><a id="procedure-card-button" class="price-slide3 " data-target="more-info-5">Profilaxie</a></li>
+            <li><a id="procedure-card-button" class="price-slide3 " data-target="more-info-6">Protetică</a></li>
+            <li><a id="procedure-card-button" class="price-slide3 " data-target="more-info-7">Parodontologie</a></li>
+            <li><a id="procedure-card-button" class="price-slide3 " data-target="more-info-8">Ortodonţie</a></li>
+            <li><a id="procedure-card-button" class="price-slide3 " data-target="more-info-9">Endodonție</a></li>
+  
+          </ul>
+        </div>
+        <div class="footer-nav">
+  
+        </div>
+        <div class="footer-contact">
+          <h4>Adresa</h4>
+          <p>Strada Sergent Ion Iriceanu 20-22</p>
+  
+          <h4>Program</h4>
+          <p>Luni-Vineri: <span style="color:white;">08:00-20:00</span></p>
+          <p></p>
+          <p>Sambata-Duminica: <span style="color:white;">08:00-13:00</span></p>
+          <p></p>
+        </div>
+        <div class="footer-contact">
+          <h4>DATE CONTACT</h4>
+          <p>0799.399.599</p>
+          <p>ancaralucasmyle@contact.com</p>
+  
+  
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+  
+      <div class="social-icons">
+        <a href="https://www.facebook.com/p/Anca-Raluca-Smyle-100054650610498/"><img src="photos/facebook.png"
+            alt="Facebook"></a>
+  
+        <a href="https://www.instagram.com/ancaralucasmyle/"><img src="photos/instagram.png" alt="Instagram"></a>
+      </div>
+      <p>&copy; 2023 SMYLE CLINIC. All rights reserved.</p>
+    </div>
+  </footer>
+     
+    <script>(g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
+        ({ key: "AIzaSyAReuUsLK2V3ANPbIeVCB0NkRF6KiHMVEE", v: "beta" });</script>
+    <script src="javascript/carusel.js"></script>
+    <script src="javascript/photo-carousel.js"></script>
+    <script src="javascript/more-info.js"></script>
+    <script src="javascript/animation-scroll.js"></script>
+    <script src="javascript/preturi.js"></script>
+    <script src="javascript/maps.js"></script>
+    <script src="javascript/progress.js"></script>
+    <script src="javascript/list-expand.js"></script>
+    
+    <!-- action buttons to top and google maps -->
+    <script>
+      // Get the button
+      var btn = $('#myBtn');
+      var btn2 = $('#myBtn2');
+      var btn3 = $('#myBtn3');
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 300) {
+          btn.addClass('show');
+          btn2.addClass('show');
+          btn3.addClass('show');
+        } else {
+          btn.removeClass('show');
+          btn2.removeClass('show');
+          btn3.removeClass('show');
+        }
+      });
+
+      btn.on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, '300');
+      });
+    </script>
+<!-- dropdown prices -->
+    <script>
+    const dropdownHeaders = document.querySelectorAll('.dropdown-header');
+
+      dropdownHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+          const dropdownList = header.nextElementSibling;
+          dropdownList.style.display = dropdownList.style.display === 'block' ? 'none' : 'block';
+        });
+      });
+    </script>
+    <!-- mobile navigation -->
+  <script>
+    function toggleMobileNavigation() {
+      const mobileNavigation = document.getElementById("mobile-sidenav");
+      mobileNavigation.classList.toggle('mobile-links-active');
+    }
+  </script>
+
+  </body>
+</html>
