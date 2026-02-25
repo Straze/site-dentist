@@ -1,4 +1,4 @@
-﻿/* ============================================
+/* ============================================
    Procedure pages (consultatie, chirurgie, etc.)
    ============================================ */
 
@@ -45,14 +45,73 @@ body.page-procedure {
     margin: 0 auto;
 }
 
+/* Compact price block - near top, after hero */
+.procedure-prices-summary {
+    max-width: 1100px;
+    margin: 0 auto 40px;
+    padding: 0 22px;
+}
+
+.procedure-prices-summary .price-table {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    background: var(--color-white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    border: 1px solid var(--color-gray-100);
+}
+
+.procedure-prices-summary .price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 18px;
+    border-bottom: 1px solid var(--color-gray-100);
+}
+
+.procedure-prices-summary .price-row:last-child {
+    border-bottom: none;
+}
+
+.procedure-prices-summary .price-row__name {
+    font-size: 14px;
+    color: var(--color-gray-800);
+}
+
+.procedure-prices-summary .price-row__value {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.procedure-prices-summary__link {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.procedure-prices-summary__link:hover {
+    text-decoration: underline;
+}
+
+/* Main content + sticky sidebar layout */
 .procedure-content {
-    max-width: 720px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0 22px 48px;
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 48px;
+    align-items: start;
 }
 
 .procedure-info {
-    margin-bottom: 48px;
+    min-width: 0;
 }
 
 .procedure-info h2 {
@@ -60,6 +119,18 @@ body.page-procedure {
     font-weight: 600;
     color: var(--color-gray-800);
     margin-bottom: 16px;
+}
+
+.procedure-info h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--color-gray-800);
+    margin-top: 28px;
+    margin-bottom: 10px;
+}
+
+.procedure-info h3:first-of-type {
+    margin-top: 0;
 }
 
 .procedure-info p {
@@ -71,6 +142,49 @@ body.page-procedure {
 
 .procedure-info p:last-child {
     margin-bottom: 0;
+}
+
+.procedure-info ul {
+    margin: 0 0 16px;
+    padding-left: 1.25rem;
+    color: var(--color-gray-600);
+    line-height: 1.7;
+}
+
+.procedure-info li {
+    margin-bottom: 6px;
+}
+
+/* Inline price callout in text */
+.price-inline {
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+/* Sticky prices sidebar */
+.procedure-prices-sidebar {
+    position: sticky;
+    top: calc(var(--header-height) + 24px);
+}
+
+.procedure-prices-sidebar .procedure-prices__title {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+}
+
+@media (max-width: 900px) {
+    .procedure-content {
+        grid-template-columns: 1fr;
+    }
+
+    .procedure-prices-sidebar {
+        position: static;
+        order: -1;
+    }
+
+    .procedure-prices-sidebar .price-table {
+        max-height: none;
+    }
 }
 
 .procedure-prices__title {
@@ -139,6 +253,14 @@ body.page-procedure {
     color: var(--color-gray-600);
     margin-top: 16px;
     font-style: italic;
+}
+
+/* Sidebar price table: scrollable when content overflows */
+.procedure-prices-sidebar .price-table {
+    max-height: 50vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 /* --- Procedure schedule (premium editorial) --- */
