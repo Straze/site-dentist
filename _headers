@@ -1,0 +1,7 @@
+# Netlify headers - efficient cache lifetimes (use if deploying to Netlify)
+# Static assets - 1 year cache
+/css/*.min.css
+  Cache-Control: public, max-age=31536000
+
+/images/*
+  Cache-Control: public, max-age=31536000

@@ -4,6 +4,7 @@
   "description": "anca&raluca smyle - Clinica Dentara",
   "scripts": {
     "start": "npx serve . -l 3000",
-    "serve": "npx serve . -l 3000"
+    "serve": "npx serve . -l 3000",
+    "build:css": "npx clean-css-cli -o css/styles.min.css css/styles.css && npx clean-css-cli -o css/nav-dropdown.min.css css/nav-dropdown.css && npx clean-css-cli -o css/contact.min.css css/contact.css && npx clean-css-cli -o css/procedure.min.css css/procedure.css && npx clean-css-cli -o css/prices.min.css css/prices.css && npx clean-css-cli -o css/services.min.css css/services.css"
   }
 }
