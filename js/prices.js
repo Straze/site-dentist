@@ -1,4 +1,4 @@
-/**
+﻿/**
  * anca&raluca smyle - Prices Page
  * Category filtering and search
  */
@@ -14,9 +14,9 @@
     function normalize(str) {
         return String(str)
             .toLowerCase()
-            .replace(/ș/g, 's').replace(/ş/g, 's')
-            .replace(/ț/g, 't').replace(/ţ/g, 't')
-            .replace(/ă/g, 'a').replace(/â/g, 'a').replace(/î/g, 'i')
+            .replace(/s/g, 's').replace(/ş/g, 's')
+            .replace(/t/g, 't').replace(/ţ/g, 't')
+            .replace(/a/g, 'a').replace(/a/g, 'a').replace(/i/g, 'i')
             .normalize('NFD')
             .replace(/[\u0300-\u036f]/g, '')
             .trim();
@@ -210,7 +210,7 @@
             .catch(function () {
                 bookingSubmitBtn.disabled = false;
                 bookingSubmitBtn.textContent = 'Trimite programarea';
-                alert('A apărut o eroare. Te rugăm să încerci din nou sau să ne suni direct.');
+                alert('A aparut o eroare. Te rugam sa incerci din nou sau sa ne suni direct.');
             });
         });
     }

@@ -1,7 +1,7 @@
 {
   "name": "site-dentist",
   "version": "1.0.0",
-  "description": "anca&raluca smyle - Clinică Dentară",
+  "description": "anca&raluca smyle - Clinica Dentara",
   "scripts": {
     "start": "npx serve . -l 3000",
     "serve": "npx serve . -l 3000"

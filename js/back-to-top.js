@@ -1,4 +1,4 @@
-/**
+﻿/**
  * anca&raluca smyle - Back to top floating button
  * Works on all pages (normal scroll + index custom scroll)
  */

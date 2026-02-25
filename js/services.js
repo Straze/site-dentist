@@ -1,4 +1,4 @@
-/**
+﻿/**
  * anca&raluca smyle - Services Page
  * Mobile menu, services filter, header scroll
  */
@@ -121,7 +121,7 @@
             .catch(function () {
                 bookingSubmitBtn.disabled = false;
                 bookingSubmitBtn.textContent = 'Trimite programarea';
-                alert('A apărut o eroare. Te rugăm să încerci din nou sau să ne suni direct.');
+                alert('A aparut o eroare. Te rugam sa incerci din nou sau sa ne suni direct.');
             });
         });
     }
