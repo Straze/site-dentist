@@ -1,4 +1,4 @@
-﻿/* ============================================
+/* ============================================
    anca&raluca smyle - Services Page (Redesigned)
    ============================================ */
 
@@ -209,29 +209,47 @@ body.page-services {
     flex: 1;
     display: flex;
     flex-direction: column;
+    padding: 24px 20px;
     text-decoration: none;
     color: inherit;
 }
 
 .service-card-full__img-wrap {
-    aspect-ratio: 16 / 10;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 16px;
 }
 
-.service-card-full__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.4s ease;
+.service-card-full__icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: var(--color-primary-light);
+    flex-shrink: 0;
 }
 
-.service-card-full:hover .service-card-full__img {
-    transform: scale(1.05);
+.service-card-full__icon svg,
+.service-card-full__icon img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.service-card-full__icon img {
+    color: var(--color-primary);
+}
+
+.service-card-full:hover .service-card-full__icon svg,
+.service-card-full:hover .service-card-full__icon img {
+    transform: scale(1.08);
 }
 
 .service-card-full__body {
-    padding: 20px;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -255,7 +273,7 @@ body.page-services {
 
 .service-card-full__cta {
     font-size: 0.95rem;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--color-primary);
 }
 
@@ -284,6 +302,19 @@ body.page-services {
 /* Highlight card (Oferte) */
 .service-card-full--highlight {
     border-color: rgba(230, 126, 34, 0.3);
+}
+
+.service-card-full--highlight .service-card-full__icon {
+    background: rgba(230, 126, 34, 0.12);
+}
+
+.service-card-full--highlight .service-card-full__icon svg,
+.service-card-full--highlight .service-card-full__icon img {
+    color: var(--color-orange);
+}
+
+.service-card-full--highlight .service-card-full__cta {
+    color: var(--color-orange);
 }
 
 .service-card-full--highlight .service-card-full__prices {

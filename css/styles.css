@@ -1,4 +1,4 @@
-﻿/* ============================================
+/* ============================================
    anca&raluca smyle - Apple-inspired Design
    ============================================ */
 
@@ -732,6 +732,10 @@ img {
 .quick-contact-bar--hero.scroll-reveal--in-view .quick-contact-bar__item:nth-child(1) { animation-delay: 0.2s; }
 .quick-contact-bar--hero.scroll-reveal--in-view .quick-contact-bar__item:nth-child(3) { animation-delay: 0.32s; }
 .quick-contact-bar--hero.scroll-reveal--in-view .quick-contact-bar__item:nth-child(5) { animation-delay: 0.44s; }
+
+.quick-contact-bar--hero.scroll-reveal.scroll-reveal--in-view {
+    pointer-events: auto;
+}
 
 @keyframes hero-contact-item-in {
     to {
@@ -2175,58 +2179,106 @@ img {
         margin-right: auto;
     }
 
-    .service-card {
-        border-radius: 14px;
-        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    .service-card.service-card-clickable {
+        padding: 20px 16px;
     }
 
-    .service-card__name {
+    .service-card__title {
+        font-size: 1rem;
+    }
+
+    .service-card__desc {
         font-size: 0.85rem;
-        padding: 8px 10px;
     }
 }
 
-.service-card {
-    position: relative;
-    display: block;
-    aspect-ratio: 4 / 3;
-    border-radius: 18px;
-    overflow: hidden;
-    transition: transform var(--transition);
+/* service-card service-card-clickable - dentalclinica.ro style */
+.service-card.service-card-clickable {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 20px;
+    background: var(--color-white);
+    border-radius: 16px;
+    border: 1px solid var(--color-gray-100);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
 }
 
-.service-card:hover .service-card__img {
-    transform: scale(1.08);
+.service-card.service-card-clickable:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border-color: var(--color-primary-light);
 }
 
-.service-card:focus-visible {
-    outline: 2px solid var(--color-purple);
+.service-card.service-card-clickable:focus-visible {
+    outline: 2px solid var(--color-primary);
     outline-offset: 4px;
 }
 
-.service-card__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.4s ease;
+.service-card__icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    background: var(--color-primary-light);
+    flex-shrink: 0;
 }
 
-.service-card__name {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 20px 16px;
-    font-size: 17px;
+.service-card__icon svg,
+.service-card__icon img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.service-card__icon img {
+    color: var(--color-primary);
+}
+
+.service-card:hover .service-card__icon svg,
+.service-card:hover .service-card__icon img {
+    transform: scale(1.08);
+}
+
+.service-card__title {
+    font-size: 1.1rem;
     font-weight: 600;
-    color: var(--color-white);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
-    transition: background var(--transition);
+    color: var(--color-gray-800);
+    margin-bottom: 8px;
+    letter-spacing: var(--letter-spacing-tight);
 }
 
-.service-card:hover .service-card__name {
-    background: linear-gradient(0deg, rgba(73, 140, 181, 0.95) 0%, rgba(73, 140, 181, 0.6) 100%);
+.service-card__desc {
+    font-size: 0.9rem;
+    color: var(--color-gray-600);
+    line-height: 1.5;
+    margin-bottom: 12px;
+    flex: 1;
+}
+
+.service-card__arrow {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    align-self: flex-start;
+}
+
+.service-card--highlight .service-card__icon {
+    background: rgba(230, 126, 34, 0.12);
+}
+
+.service-card--highlight .service-card__icon svg,
+.service-card--highlight .service-card__icon img {
+    color: var(--color-orange);
+}
+
+.service-card--highlight .service-card__arrow {
+    color: var(--color-orange);
 }
 
 /* --- Footer (Apple-style: compact, minimal) --- */

@@ -46,13 +46,15 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/nav-dropdown.css">
+    <link rel="stylesheet" href="css/nav-dropdown.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="css/nav-dropdown.css"></noscript>
 </head>
 <body>
     <div class="logo-bg" aria-hidden="true">
-        <img src="images/logo2.png" alt="" class="logo-bg__img">
+        <img src="images/logo2.png" alt="" class="logo-bg__img" fetchpriority="high">
     </div>
     <header class="header" id="header">
         <div class="header__inner">
@@ -103,6 +105,7 @@
                         </div>
                     </div>
                 </div>
+                <a href="contact.html" class="header__link">Contact</a>
                 <a href="schedule.html" class="header__link header__link--cta">Programeaza-te</a>
             </nav>
         </div>
@@ -137,7 +140,7 @@
                     <span class="quick-contact-bar__sep" aria-hidden="true"></span>
                     <div class="quick-contact-bar__item quick-contact-bar__item--address">
                         <span class="quick-contact-bar__label">Adresa</span>
-                        <span class="quick-contact-bar__value">Drumu Jilavei 17, Berceni, Piata Sudului, Bucuresti</span>
+                        <span class="quick-contact-bar__value">Drumu Jilavei 17, Berceni, Bucuresti</span>
                     </div>
                 </div>
             </div>
@@ -152,49 +155,93 @@
                 </div>
             </div>
             <div class="services-grid" id="servicii-grid">
-                <a href="consultatie.html" class="service-card scroll-reveal scroll-reveal--from-left">
-                    <img src="https://images.pexels.com/photos/305565/pexels-photo-305565.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" alt="Consultatie dentara" class="service-card__img">
-                    <span class="service-card__name">Consultatie</span>
+                <a href="consultatie.html" class="service-card service-card-clickable scroll-reveal scroll-reveal--from-left">
+                    <div class="service-card__icon" aria-hidden="true">
+                        <img src="images/dental-chair.svg" alt="" width="28" height="28">
+                    </div>
+                    <h3 class="service-card__title">Consultatie</h3>
+                    <p class="service-card__desc">Evaluare completa si plan de tratament personalizat.</p>
+                    <span class="service-card__arrow">→</span>
                 </a>
-                <a href="chirurgie.html" class="service-card scroll-reveal scroll-reveal--from-left">
-                    <img src="https://images.pexels.com/photos/52527/dentist-pain-borowac-cure-52527.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" alt="Chirurgie dentara" class="service-card__img">
-                    <span class="service-card__name">Chirurgie</span>
+                <a href="chirurgie.html" class="service-card service-card-clickable scroll-reveal scroll-reveal--from-left">
+                    <div class="service-card__icon" aria-hidden="true">
+                        <img src="images/injection.svg" alt="" width="28" height="28">
+                    </div>
+                    <h3 class="service-card__title">Chirurgie</h3>
+                    <p class="service-card__desc">Extractii si interventii chirurgicale fara durere.</p>
+                    <span class="service-card__arrow">→</span>
                 </a>
-                <a href="pedodontie.html" class="service-card scroll-reveal scroll-reveal--from-left">
-                    <img src="https://images.pexels.com/photos/6502343/pexels-photo-6502343.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" alt="Pedodontie" class="service-card__img">
-                    <span class="service-card__name">Pedodontie</span>
+                <a href="pedodontie.html" class="service-card service-card-clickable scroll-reveal scroll-reveal--from-left">
+                    <div class="service-card__icon" aria-hidden="true">
+                        <img src="images/teeth.svg" alt="" width="28" height="28">
+                    </div>
+                    <h3 class="service-card__title">Pedodontie</h3>
+                    <p class="service-card__desc">Ingrijire dentara specializata pentru copii.</p>
+                    <span class="service-card__arrow">→</span>
                 </a>
-                <a href="odontologie.html" class="service-card scroll-reveal scroll-reveal--from-right">
-                    <img src="https://images.pexels.com/photos/3845729/pexels-photo-3845729.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" alt="Odontologie" class="service-card__img">
-                    <span class="service-card__name">Odontologie</span>
+                <a href="odontologie.html" class="service-card service-card-clickable scroll-reveal scroll-reveal--from-right">
+                    <div class="service-card__icon" aria-hidden="true">
+                        <img src="images/teeth-suction.svg" alt="" width="28" height="28">
+                    </div>
+                    <h3 class="service-card__title">Odontologie</h3>
+                    <p class="service-card__desc">Plomburi, coroane, fatete — tratamente restaurative.</p>
+                    <span class="service-card__arrow">→</span>
                 </a>
-                <a href="profilaxie.html" class="service-card scroll-reveal scroll-reveal--from-right">
-                    <img src="https://images.pexels.com/photos/3845744/pexels-photo-3845744.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" alt="Profilaxie" class="service-card__img">
-                    <span class="service-card__name">Profilaxie</span>
+                <a href="profilaxie.html" class="service-card service-card-clickable scroll-reveal scroll-reveal--from-right">
+                    <div class="service-card__icon" aria-hidden="true">
+                        <img src="images/teeth.svg" alt="" width="28" height="28">
+                    </div>
+                    <h3 class="service-card__title">Profilaxie</h3>
+                    <p class="service-card__desc">Igienizare profesionala, detartraj si preventie.</p>
+                    <span class="service-card__arrow">→</span>
                 </a>
-                <a href="protetica.html" class="service-card scroll-reveal scroll-reveal--from-right">
-                    <img src="https://images.pexels.com/photos/3845855/pexels-photo-3845855.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" alt="Protetica" class="service-card__img">
-                    <span class="service-card__name">Protetica</span>
+                <a href="protetica.html" class="service-card service-card-clickable scroll-reveal scroll-reveal--from-right">
+                    <div class="service-card__icon" aria-hidden="true">
+                        <img src="images/ceramic-crown.svg" alt="" width="28" height="28">
+                    </div>
+                    <h3 class="service-card__title">Protetica</h3>
+                    <p class="service-card__desc">Coronuri, punti si proteze dentare.</p>
+                    <span class="service-card__arrow">→</span>
                 </a>
-                <a href="parodontologie.html" class="service-card scroll-reveal scroll-reveal--from-left">
-                    <img src="https://images.pexels.com/photos/3845724/pexels-photo-3845724.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" alt="Parodontologie" class="service-card__img">
-                    <span class="service-card__name">Parodontologie</span>
+                <a href="parodontologie.html" class="service-card service-card-clickable scroll-reveal scroll-reveal--from-left">
+                    <div class="service-card__icon" aria-hidden="true">
+                        <img src="images/dental-probe.svg" alt="" width="28" height="28">
+                    </div>
+                    <h3 class="service-card__title">Parodontologie</h3>
+                    <p class="service-card__desc">Tratamentul bolilor gingivale si parodontale.</p>
+                    <span class="service-card__arrow">→</span>
                 </a>
-                <a href="ortodontie.html" class="service-card scroll-reveal scroll-reveal--from-left">
-                    <img src="https://images.pexels.com/photos/6627413/pexels-photo-6627413.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" alt="Ortodontie" class="service-card__img">
-                    <span class="service-card__name">Ortodontie</span>
+                <a href="ortodontie.html" class="service-card service-card-clickable scroll-reveal scroll-reveal--from-left">
+                    <div class="service-card__icon" aria-hidden="true">
+                        <img src="images/crooked-tooth.svg" alt="" width="28" height="28">
+                    </div>
+                    <h3 class="service-card__title">Ortodontie</h3>
+                    <p class="service-card__desc">Aparate fixe si mobile pentru alinierea dintilor.</p>
+                    <span class="service-card__arrow">→</span>
                 </a>
-                <a href="endodontie.html" class="service-card scroll-reveal scroll-reveal--from-right">
-                    <img src="https://images.pexels.com/photos/305566/pexels-photo-305566.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" alt="Endodontie" class="service-card__img">
-                    <span class="service-card__name">Endodontie</span>
+                <a href="endodontie.html" class="service-card service-card-clickable scroll-reveal scroll-reveal--from-right">
+                    <div class="service-card__icon" aria-hidden="true">
+                        <img src="images/dentist-tool.svg" alt="" width="28" height="28">
+                    </div>
+                    <h3 class="service-card__title">Endodontie</h3>
+                    <p class="service-card__desc">Tratament de canal pentru salvarea dintilor.</p>
+                    <span class="service-card__arrow">→</span>
                 </a>
-                <a href="implantologie.html" class="service-card scroll-reveal scroll-reveal--from-right">
-                    <img src="https://images.pexels.com/photos/52527/dentist-pain-borowac-cure-52527.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" alt="Implantologie" class="service-card__img">
-                    <span class="service-card__name">Implantologie</span>
+                <a href="implantologie.html" class="service-card service-card-clickable scroll-reveal scroll-reveal--from-right">
+                    <div class="service-card__icon" aria-hidden="true">
+                        <img src="images/tooth-implant.svg" alt="" width="28" height="28">
+                    </div>
+                    <h3 class="service-card__title">Implantologie</h3>
+                    <p class="service-card__desc">Implanturi dentare pentru inlocuirea dintilor pierduti.</p>
+                    <span class="service-card__arrow">→</span>
                 </a>
-                <a href="oferte.html" class="service-card scroll-reveal scroll-reveal--from-left">
-                    <img src="https://images.pexels.com/photos/3845744/pexels-photo-3845744.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" alt="Oferte speciale" class="service-card__img">
-                    <span class="service-card__name">Oferte</span>
+                <a href="oferte.html" class="service-card service-card-clickable service-card--highlight scroll-reveal scroll-reveal--from-left">
+                    <div class="service-card__icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v10H4V12"/><path d="M22 7H2v5h20V7z"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z"/></svg>
+                    </div>
+                    <h3 class="service-card__title">Oferte</h3>
+                    <p class="service-card__desc">Consultatie gratuita, igienizare si alte oferte.</p>
+                    <span class="service-card__arrow">→</span>
                 </a>
             </div>
         </section>
@@ -212,10 +259,10 @@
             </div>
             <div class="experience-section__gallery">
                 <div class="experience-section__grid">
-                    <div class="experience-section__img-wrap"><img src="https://images.pexels.com/photos/6627413/pexels-photo-6627413.jpeg?auto=compress&cs=tinysrgb&w=800&h=500" alt="Interior clinica dentara" class="experience-section__img scroll-reveal scroll-reveal--from-left"></div>
-                    <div class="experience-section__img-wrap"><img src="https://images.pexels.com/photos/305568/pexels-photo-305568.jpeg?auto=compress&cs=tinysrgb&w=800&h=500" alt="Consultatie la dentist" class="experience-section__img scroll-reveal scroll-reveal--from-left"></div>
-                    <div class="experience-section__img-wrap"><img src="https://images.pexels.com/photos/305566/pexels-photo-305566.jpeg?auto=compress&cs=tinysrgb&w=800&h=500" alt="Echipament dentar modern" class="experience-section__img scroll-reveal scroll-reveal--from-right"></div>
-                    <div class="experience-section__img-wrap"><img src="https://images.pexels.com/photos/3845724/pexels-photo-3845724.jpeg?auto=compress&cs=tinysrgb&w=800&h=500" alt="Tratament dentar" class="experience-section__img scroll-reveal scroll-reveal--from-right"></div>
+                    <div class="experience-section__img-wrap"><img src="https://images.pexels.com/photos/6627413/pexels-photo-6627413.jpeg?auto=compress&cs=tinysrgb&w=800&h=500" alt="Interior clinica dentara" class="experience-section__img scroll-reveal scroll-reveal--from-left" loading="lazy"></div>
+                    <div class="experience-section__img-wrap"><img src="https://images.pexels.com/photos/305568/pexels-photo-305568.jpeg?auto=compress&cs=tinysrgb&w=800&h=500" alt="Consultatie la dentist" class="experience-section__img scroll-reveal scroll-reveal--from-left" loading="lazy"></div>
+                    <div class="experience-section__img-wrap"><img src="https://images.pexels.com/photos/305566/pexels-photo-305566.jpeg?auto=compress&cs=tinysrgb&w=800&h=500" alt="Echipament dentar modern" class="experience-section__img scroll-reveal scroll-reveal--from-right" loading="lazy"></div>
+                    <div class="experience-section__img-wrap"><img src="https://images.pexels.com/photos/3845724/pexels-photo-3845724.jpeg?auto=compress&cs=tinysrgb&w=800&h=500" alt="Tratament dentar" class="experience-section__img scroll-reveal scroll-reveal--from-right" loading="lazy"></div>
                 </div>
             </div>
         </section>
@@ -276,7 +323,7 @@
         <section class="price-discovery-section" id="preturi-contact">
             <div class="price-discovery-section__wrap">
                 <div class="price-discovery-banner price-discovery-banner--left">
-                    <img src="https://images.pexels.com/photos/3845808/pexels-photo-3845808.jpeg?auto=compress&cs=tinysrgb&w=240&h=560" alt="" class="price-discovery-banner__img" aria-hidden="true">
+                    <img src="https://images.pexels.com/photos/3845808/pexels-photo-3845808.jpeg?auto=compress&cs=tinysrgb&w=240&h=560" alt="" class="price-discovery-banner__img" aria-hidden="true" loading="lazy">
                 </div>
                 <div class="price-discovery-section__inner">
                     <p class="price-discovery-section__eyebrow">Preturi & Contact</p>
@@ -304,7 +351,7 @@
                     </div>
                 </div>
                 <div class="price-discovery-banner price-discovery-banner--right">
-                    <img src="https://images.pexels.com/photos/3845954/pexels-photo-3845954.jpeg?auto=compress&cs=tinysrgb&w=240&h=560" alt="" class="price-discovery-banner__img" aria-hidden="true">
+                    <img src="https://images.pexels.com/photos/3845954/pexels-photo-3845954.jpeg?auto=compress&cs=tinysrgb&w=240&h=560" alt="" class="price-discovery-banner__img" aria-hidden="true" loading="lazy">
                 </div>
             </div>
         </section>
@@ -427,7 +474,7 @@
                     <a href="prices.html" class="footer__link">Preturi</a>
                     <a href="#schedule" class="footer__link">Programare</a>
                     <a href="#faq" class="footer__link">Intrebari frecvente</a>
-                    <a href="#preturi-contact" class="footer__link">Contact & Preturi</a>
+                    <a href="contact.html" class="footer__link">Contact</a>
                 </div>
             </div>
             <div class="footer__bottom">
