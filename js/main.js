@@ -1,6 +1,7 @@
 /**
  * Anca&Raluca smyle - Landing Page Scripts
  * Hybrid scroll: snap hero→services (one-way), then free scroll for the rest
+ * Mobile: native scroll for smooth momentum (no custom touch handlers)
  */
 
 (function () {
@@ -10,6 +11,13 @@
     const menuToggle = document.getElementById('menuToggle');
     const headerNav = document.getElementById('headerNav');
     const scrollContainer = document.getElementById('scrollContainer');
+
+    const isMobile = function () {
+        return window.innerWidth <= 768;
+    };
+
+    const scrollRevealEls = document.querySelectorAll('.scroll-reveal');
+    const revealed = new Set();
 
     let scrollY = 0;
     let maxScroll = 0;
@@ -64,7 +72,7 @@
     }
 
     function applyScroll() {
-        if (scrollContainer) {
+        if (scrollContainer && !isMobile()) {
             scrollContainer.style.transform = 'translate3d(0, ' + (-scrollY) + 'px, 0)';
         }
     }
@@ -98,11 +106,12 @@
     }
 
     function updateHeaderOnScroll() {
+        var y = isMobile() && scrollContainer ? scrollContainer.scrollTop : scrollY;
         if (header) {
-            header.classList.toggle('scrolled', scrollY > 20);
+            header.classList.toggle('scrolled', y > 20);
         }
         if (typeof window.updateBackToTopVisibility === 'function') {
-            window.updateBackToTopVisibility(scrollY > 300);
+            window.updateBackToTopVisibility(y > 300);
         }
     }
 
@@ -178,29 +187,56 @@
 
     if (scrollContainer) {
         window.scrollToTop = function () {
-            animateTo(0);
+            if (isMobile()) {
+                scrollContainer.scrollTo({ top: 0, behavior: 'smooth' });
+            } else {
+                animateTo(0);
+            }
         };
-        window.addEventListener('wheel', handleWheel, { passive: false });
-        scrollContainer.addEventListener('touchstart', handleTouchStart, { passive: true });
-        scrollContainer.addEventListener('touchmove', handleTouchMove, { passive: false });
-        window.addEventListener('resize', function () {
-            updateMaxScroll();
-            updateSnapThreshold();
-            scrollY = Math.min(scrollY, maxScroll);
-            applyScroll();
+        if (isMobile()) {
+            scrollContainer.style.transform = '';
+            scrollContainer.addEventListener('scroll', function () {
+                updateScrollReveal();
+                updateHeaderOnScroll();
+            }, { passive: true });
             updateScrollReveal();
+            updateHeaderOnScroll();
+        } else {
+            window.addEventListener('wheel', handleWheel, { passive: false });
+            scrollContainer.addEventListener('touchstart', handleTouchStart, { passive: true });
+            scrollContainer.addEventListener('touchmove', handleTouchMove, { passive: false });
+        }
+        window.addEventListener('resize', function () {
+            if (isMobile()) {
+                if (scrollContainer) scrollContainer.style.transform = '';
+                updateScrollReveal();
+                updateHeaderOnScroll();
+            } else {
+                updateMaxScroll();
+                updateSnapThreshold();
+                scrollY = Math.min(scrollY, maxScroll);
+                applyScroll();
+                updateScrollReveal();
+            }
         });
         window.addEventListener('load', function () {
+            if (isMobile()) {
+                updateScrollReveal();
+                updateHeaderOnScroll();
+            } else {
+                updateMaxScroll();
+                updateSnapThreshold();
+                applyScroll();
+            }
+        });
+        if (!isMobile()) {
             updateMaxScroll();
             updateSnapThreshold();
             applyScroll();
-        });
-        updateMaxScroll();
-        updateSnapThreshold();
-        applyScroll();
+        }
         setTimeout(function () {
             if (typeof window.updateBackToTopVisibility === 'function') {
-                window.updateBackToTopVisibility(scrollY > 300);
+                window.updateBackToTopVisibility(getScrollY() > 300);
             }
         }, 0);
     }
@@ -221,11 +257,16 @@
                 const href = link.getAttribute('href');
                 if (href && href.startsWith('#')) {
                     const targetEl = document.querySelector(href);
-                    if (targetEl) {
+                    if (targetEl && scrollContainer) {
                         e.preventDefault();
-                        var targetY = targetEl.getBoundingClientRect().top + scrollY;
-                        targetY = Math.max(0, Math.min(targetY, maxScroll));
-                        animateTo(targetY);
+                        var y = getScrollY();
+                        var targetY = targetEl.getBoundingClientRect().top + y;
+                        if (isMobile()) {
+                            scrollContainer.scrollTo({ top: Math.max(0, targetY), behavior: 'smooth' });
+                        } else {
+                            targetY = Math.max(0, Math.min(targetY, maxScroll));
+                            animateTo(targetY);
+                        }
                     }
                 }
                 headerNav.classList.remove('is-open');
@@ -265,13 +306,14 @@
     });
 
     // Scroll reveal: elements invisible by default, animate in when entering viewport (trigger once, stay visible)
-    const scrollRevealEls = document.querySelectorAll('.scroll-reveal');
-    const revealed = new Set();
-
     function isInView(el) {
         const rect = el.getBoundingClientRect();
         const vh = window.innerHeight;
         return rect.top < vh * 0.85 && rect.bottom > vh * 0.15;
+    }
+
+    function getScrollY() {
+        return isMobile() && scrollContainer ? scrollContainer.scrollTop : scrollY;
     }
 
     function updateScrollReveal() {
@@ -382,11 +424,16 @@
             const href = link.getAttribute('href');
             if (href === '#') return;
             const targetEl = document.querySelector(href);
-            if (targetEl) {
+            if (targetEl && scrollContainer) {
                 e.preventDefault();
-                var targetY = targetEl.getBoundingClientRect().top + scrollY;
-                targetY = Math.max(0, Math.min(targetY, maxScroll));
-                animateTo(targetY);
+                var y = getScrollY();
+                var targetY = targetEl.getBoundingClientRect().top + y;
+                if (isMobile()) {
+                    scrollContainer.scrollTo({ top: Math.max(0, targetY), behavior: 'smooth' });
+                } else {
+                    targetY = Math.max(0, Math.min(targetY, maxScroll));
+                    animateTo(targetY);
+                }
             }
         });
     });

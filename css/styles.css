@@ -70,6 +70,21 @@ body:has(.scroll-container) {
     z-index: 1;
 }
 
+/* Mobile: native scroll for smooth momentum (no custom touch handlers) */
+@media (max-width: 768px) {
+    .scroll-container {
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+        will-change: auto;
+        overscroll-behavior-y: contain;
+    }
+    body:has(.scroll-container) {
+        overflow: hidden;
+    }
+}
+
 /* --- Logo background (fixed, behind content) --- */
 .logo-bg {
     position: fixed;
