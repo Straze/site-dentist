@@ -1,5 +1,5 @@
 ﻿/**
- * anca&raluca smyle - Services Page
+ * Anca&Raluca smyle - Services Page
  * Mobile menu, services filter, header scroll
  */
 

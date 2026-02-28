@@ -1,5 +1,5 @@
 ﻿/**
- * anca&raluca smyle - Procedure Pages
+ * Anca&Raluca smyle - Procedure Pages
  * Mobile menu and header scroll
  */
 

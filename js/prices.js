@@ -1,5 +1,5 @@
 ﻿/**
- * anca&raluca smyle - Prices Page
+ * Anca&Raluca smyle - Prices Page
  * Category filtering and search
  */
 

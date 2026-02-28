@@ -1,5 +1,5 @@
 /* ============================================
-   anca&raluca smyle - Apple-inspired Design
+   Anca&Raluca smyle - Apple-inspired Design
    ============================================ */
 
 :root {
@@ -1375,12 +1375,14 @@ img {
 }
 
 .price-discovery-banner {
+    display: block;
     width: 100%;
     max-width: 200px;
     aspect-ratio: 11 / 28;
     border-radius: 4px;
     overflow: hidden;
     border: 1px solid rgba(0, 0, 0, 0.06);
+    text-decoration: none;
 }
 
 .price-discovery-banner__img {
@@ -2379,6 +2381,10 @@ img {
 
 .footer__social-link:hover {
     background: var(--color-purple);
+}
+
+.footer__social-link img {
+    display: block;
 }
 
 /* --- Back to top floating button --- */

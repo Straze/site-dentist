@@ -1,5 +1,5 @@
 ﻿/**
- * anca&raluca smyle - Schedule Page
+ * Anca&Raluca smyle - Schedule Page
  * Mobile menu, header scroll, booking form
  */
 

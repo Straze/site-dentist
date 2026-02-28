@@ -1,6 +1,6 @@
-﻿/**
- * anca&raluca smyle - Landing Page Scripts
- * Hybrid scroll: snap hero↔services, then free scroll for the rest
+/**
+ * Anca&Raluca smyle - Landing Page Scripts
+ * Hybrid scroll: snap hero→services (one-way), then free scroll for the rest
  */
 
 (function () {
@@ -113,7 +113,8 @@
         var points = getIntroSnapPoints();
         var lastSnap = points[points.length - 1];
         var atLastSnapAndScrollingDown = scrollY >= lastSnap - 2 && delta > 0;
-        if (wouldBe < snapThreshold && !atLastSnapAndScrollingDown) {
+        var scrollingDown = delta > 0;
+        if (wouldBe < snapThreshold && !atLastSnapAndScrollingDown && scrollingDown) {
             e.preventDefault();
             var target = findIntroSnapTarget(delta);
             if (target !== scrollY) {
@@ -156,7 +157,8 @@
         var points = getIntroSnapPoints();
         var lastSnap = points[points.length - 1];
         var atLastSnapAndScrollingDown = scrollY >= lastSnap - 2 && delta > 0;
-        if (wouldBe < snapThreshold && !atLastSnapAndScrollingDown) {
+        var scrollingDown = delta > 0;
+        if (wouldBe < snapThreshold && !atLastSnapAndScrollingDown && scrollingDown) {
             var target = findIntroSnapTarget(delta);
             if (target !== scrollY) {
                 e.preventDefault();
