@@ -1,7 +1,7 @@
 {
   "name": "site-dentist",
   "version": "1.0.0",
-  "description": "Anca&Raluca smyle - Clinica Dentara",
+  "description": "Anca&Raluca smyle - Cabinet Stomatologic",
   "scripts": {
     "start": "npx serve . -l 3000",
     "serve": "npx serve . -l 3000",
