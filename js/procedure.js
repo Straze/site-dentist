@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Anca&Raluca smyle - Procedure Pages
  * Mobile menu and header scroll
  */
@@ -82,7 +82,7 @@
             formData.forEach(function (value, key) {
                 data[key] = value;
             });
-            fetch('https://formsubmit.co/ajax/ancaralucasmyle@contact.com', {
+            fetch('https://formsubmit.co/ajax/ndanielcatalin@gmail.com', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

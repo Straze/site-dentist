@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Anca&Raluca smyle - Prices Page
  * Category filtering and search
  */
@@ -192,7 +192,7 @@
                 data[key] = value;
             });
 
-            fetch('https://formsubmit.co/ajax/ancaralucasmyle@contact.com', {
+            fetch('https://formsubmit.co/ajax/ndanielcatalin@gmail.com', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
